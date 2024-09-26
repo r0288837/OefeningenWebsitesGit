@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabellen: cursusoefening 1</title>
+    <style>
+        table {
+            margin: 1em;
+            border: 1px solid darkred;
+            border-collapse: collapse;
+        }
+        table td{
+          border: 1px solid darkblue;
+          padding: 25px;
+        }
+       
+        table th{
+          border: 10px solid darkgreen;
+          padding: 2px;
+          background-color: darkgray;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Tabel Cursusoefening 1</h1>
+    <table>
+        <caption align="bottom">Oefening 1</caption>
+        <tr>
+            <th>Cel 1</th>
+            <th colspan="2">Samengevoegd</th>
+        </tr>
+        <tr>
+            <th rowspan="2">samengevoegd</th>
+            <td>Cel 5</td>
+            <td>Cel 6</td>
+        </tr>
+        <tr>
+            <td>Cel 8</td>
+            <td>Cel 9</td>
+        </tr>
+    </table>
+    <br>
+
+    <h1>Tabel Cursusoefening 2</h1>
+    <table>
+        <caption align="bottom">Oefening 2</caption>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td colspan="2" rowspan="2"></td>
+        </tr>
+        <tr>
+            <td>31</td>
+        </tr>
+    </table>
+    <br>
+
+    <h1>Tabel Cursusoefening 3</h1>
+    <table>
+        <caption align="bottom">Oefening 3</caption>
+        <tr>
+            <th>Voornaam</th>
+            <td>Tommy</td>
+        </tr>
+        <tr>
+            <th>Achternaam</th>
+            <td>Vercetti</td>
+        </tr>
+        <tr>
+            <th>Tabel</th>
+            <td>
+                <table>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+   
+</body>
+
+</html>
