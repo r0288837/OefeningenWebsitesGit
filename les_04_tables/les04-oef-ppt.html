@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les 04 - Oef ppt</title>
+    <style>
+table{
+    margin: 69px;
+    background-color: antiquewhite;
+    border: 2px solid darkred;
+    caption-side: bottom;
+}
+th, td {
+    margin: 0;
+    border: 1px solid blue;
+border-collapse: collapse;}
+td.empty {
+    border: none;
+}
+th{
+    font-weight: 800;
+}
+td{
+    font-size: .8em;
+}
+    </style>
+  </head>
+
+  <body>
+  <table>
+    <caption>titel tabel</caption>
+    <tr>
+        <th>cel 1</th>
+        <th colspan="2">samengevoegd</th>
+        <!-- <td class="empty"></td> -->
+    </tr>
+    <tr>
+        <th rowspan="2">samengevoegd</th>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>9</td>
+        <!-- <td class="empty"></td> -->
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td colspan="2" class="empty"></td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td colspan="2" class="empty"></td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+        <th>Voornaam</th>
+        <td>Jos</td>
+    </tr>
+    <tr>
+        <th>Familienaam</th>
+        <td>Beckx</td>
+    </tr>
+    <tr>
+        <th>Talenkennis</th>
+        <td>
+            <table>
+                <tr>
+                    <th>NL</th>
+                    <th>Fr</th>
+                    <th>En</th>
+                </tr>
+                <tr>
+                    <td>+++</td>
+                    <td>+</td>
+                    <td>++</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+  </table>
+</body>
+</html>
