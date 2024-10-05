@@ -5,33 +5,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
     <title>Les 05 Oef 01</title>
     <style>
+        body {
+            font-family: 'Space Mono';
+        }
+        div.formcontainer{
+            background-color: bisque;
+            width: 40%;
+            margin: auto;
+            text-align: center;
+        }
         label {
-            display: inline-block;
+            display: block;
             padding-bottom: 10px;
+        }
+        input.lblue{
+            margin-bottom: 10px;
+            background-color: lightblue;
+        }
+        input.lblue:focus{
+background-color: aliceblue;
+        }
+        input.submit {
+            background-color: antiquewhite;
+            border-radius: 22px;
         }
     </style>
 </head>
 
 <body>
-
+<div class="formcontainer">
     <form method="post" action="https://tm-statweb.be/forms.php">
         <div>
-            <label for="gebruikersnaam">Gebruikersnaam: </label>
-            <input type="email" id="gebruikersnaam" name="gebruikersnaam" />
+            <label for="voornaam">Voornaam: </label>
+            <input class="lblue" type="text" id="voornaam" name="voornaam" placeholder="Voornaam"/>
 
         </div>
         <div>
-            <label for="wachtwoord">Wachtwoord: </label>
-            <input type="password" id="wachtwoord" name="wachtwoord" />
+            <label for="familienaam">Familienaam: </label>
+            <input  class="lblue"  type="text" id="familienaam" name="familienaam" placeholder="Achternaam"/>
 
         </div>
         <div>
-            <input type="submit" value="Aanmelden" />
+            <input class="submit" type="submit" value="Aanmelden" />
         </div>
     </form>
-
+</div>
 </body>
 
 </html>

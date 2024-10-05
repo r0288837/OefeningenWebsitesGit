@@ -5,62 +5,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+   
     <title>Formulier</title>
     <style>
-        /* label,
-        textarea,
-        legend {
-            vertical-align: top;
-            color: cornflowerblue;
-            display: inline-block;
-            padding-bottom: 10px;
-            font-weight: 700;
-        } */
+       
+        body {
+            font-family: 'Space Mono';
+        }
+        label{
+            display: block;
+            padding-bottom: -8px;;
+        }
+      form {
+        width: 50%;
+      }
+      input {
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px antiquewhite;
+  border-radius: 22px;
+}
+input:focus {
+  background-color: antiquewhite;
+}
+input.submit{
+    background-color: antiquewhite;
+}
     </style>
 </head>
 
 <body>
-    <h1>Stel uw vraag hier:</h1>
-
-    <form action="https://tm-statweb.be/forms.php" method="POST">
+   
+<div class="formcontainer">
+    <form method="post" action="https://tm-statweb.be/forms.php">
         <div>
-            <label for="naam">Naam: <input type="text" id="naam" name="naam" required></label>
+            <label for="voornaam">Voornaam: </label>
+            <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam"/>
+
         </div>
-
         <div>
-            <label for="email">Email: <input type="email" id="email" name="email" required></label>
+            <label for="familienaam">Familienaam: </label>
+            <input    type="text" id="familienaam" name="familienaam" placeholder="Achternaam"/>
+
         </div>
-
         <div>
-            <label for="website">Website: <input type="url" id="website" name="website" required></label>
+            <label for="username">Username: </label>
+            <input   type="email" id="username" name="username" placeholder="x@mail.com"/>
+
         </div>
-
         <div>
-            <label for="reactie">Reactie: <textarea rows="5" id="reactie" name="reactie"></textarea>
-            </label>
+            <label for="username">Username: </label>
+            <input required minlength="5" maxlength="15"  type="text" id="username" name="username" placeholder="username"/>
+
         </div>
-
         <div>
-            <fieldset>
-                <legend>Geslacht</legend>
-                <div>
-                    <label for="male">Male <input type="radio" id="male" name="gender" value="male"></label>
-                    <label for="female">Female<input type="radio" id="female" name="gender" value="female"></label>
-                    <label for="other">Other <input type="radio" id="other" name="gender" value="other"></label>
-                </div>
-            </fieldset>
+            <label for="password">Paswoord: </label>
+            <input required  type="password" id="password" name="password" placeholder="password"/>
+
         </div>
-
         <div>
-            <label for="opdehoogtehouden">Hou me op de hoogte:
-                <input type="checkbox" value="yes" id="opdehoogtehouden" name="opdehoogtehouden">
-            </label>
+            <label for="repeatpassword">repeat Paswoord: </label>
+            <input required type="password" id="repeatpassword" name="repeatpassword" placeholder="repeatpassword"/>
+
         </div>
-
         <div>
-            <input type="submit" value="Indienen">
+            <input class="submit" type="submit" value="Aanmelden" />
         </div>
     </form>
+</div>
 </body>
 
 </html>
