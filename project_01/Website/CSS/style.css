@@ -1,0 +1,56 @@
+/* 
+BOILER PLATE STARTING TEMPLATE 
+______________________________________
+*/
+/* DECLARATION ROOT VARIABLES 
+____________________________________*/
+:root {
+  --whiteYellow: #fffef2;
+  --blueDark: #003384;
+  --orangeSoft: #ffb400;
+}
+
+/* --------------- ALL & BODY */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--whiteYellow);
+  font-family: "Public Sans";
+}
+
+/* --------------- FONTS */
+.fontMono {
+  font-family: "Space Mono";
+}
+.fontSerif {
+  font-family: "PT Serif";
+}
+
+/* --------------- TEXT COLOURS */
+.blueText {
+  color: var(--blueDark);
+}
+.orangeText {
+  color: var(--orangeSoft);
+}
+.whiteText {
+  color: var(--whiteYellow);
+}
+
+/* ----------- BACKGROUND COLOURS */
+.blueBackground {
+  background-color: var(--blueDark);
+}
+.orangeBackground {
+  background-color: var(--orangeSoft);
+}
+.whiteBackground {
+  background-color: var(--whiteYellow);
+}
+
+/* ------------------------------------------------------------------- */
