@@ -49,13 +49,13 @@
       <!-- <h1>Welcome to My Website</h1> -->
       <div class="box">
         <p>Howdy, partner.</p>
-        <p><img src="/ICON/greet.png" alt="Greet Icon" class="icon" /></p>
+        <p><img src="/ICON/greet.png" alt="Greet Icon" class="iconHeader" /></p>
         <p>
           Joeri Van De Weyer,
           <span class="fontSerif orangeText">Full Stack Developer.</span>
         </p>
         <p>Pleasure to make your acquaintance!</p>
-        <a href="#skills" class="link-button">About ></a>
+        <a href="#about" class="link-button">About></a>
         <!-- Link styled as a button -->
       </div>
     </header>
@@ -75,15 +75,75 @@
 
     <section id="about">
       <h1 class="blueText orangeLine">ABOUT</h1>
+      <div class="container">
+        <div class="text-column">
+          <p>
+            <img src="/ICON/flag.png" alt="Flag Icon" class="icon" /></p>
+            <p>Hailing from Balen, Antwerp, Belgium,
+          </p>
+          <p>
+            <img src="/ICON/school.png" alt="School Icon" class="icon" /></p>
+            <p><span class="fontMono orangeText">I'm a Junior Full Stack Web Developer & Graduate Programmer</span>.
+          </p>
+          <p>
+            <img src="/ICON/love.png" alt="Love in Hand Icon" class="icon" /></p>
+            <p>Programming clean and responsive applications or websites is very
+            satisfactory to me.</p>
+         <p>
+            However, what I find most exciting is creating appealing, practical
+            and dynamic user experiences.
+          </p>
+        </div>
+        <div class="image-column">
+          <img src="/IMG/profile.png" alt="Profile image" />
+        </div>
+      </div>
+      <div class="button-container">
+        <a href="#" class="button">More></a>
+        <a href="#skills" class="button ">Skills></a>
+    </div>
     </section>
 
     <section id="skills" class="blueBackground">
-      <h1 class="orangeText whiteLine">ABOUT</h1>
+      <h1 class="orangeText whiteLine">SKILLS</h1>
+
+      <div class="flex-container">
+        <img src="/ICON/html.png" alt="Icon HTML">
+      <img src="/ICON/css.png" alt="Icon CSS">
+      <img src="/ICON/js.png" alt="Icon JS">
+      <img src="/ICON/php.png" alt="Icon PHP">
+    </div>
+    <div class="button-container">
+      <a href="#" class="button2   ">More></a>
+      <a href="#projects" class="button2 ">Projects></a>
+  </div>
     </section>
 
     <section id="projects">
-      <h1 class="blueText orangeLine">ABOUT</h1>
+      <h1 class="blueText orangeLine">PROJECTS</h1>
+      <div class="flex-container projects">
+        <a href="#about">
+          <img src="/IMG/Projecten/littlebelgium.png" alt="Image 1" title="Visit LittleBelgium">
+        
+        </a>
+        <img src="/IMG/Projecten/onbetaaldefacturen.png" alt="Image 2">
+        <img src="/IMG/Projecten/happyhair.png" alt="Image 3">
+        <img src="/IMG/Projecten/haaranoek.png" alt="Image 4">
+        <img src="/IMG/Projecten/dockx.png" alt="Image 5">
+    </div>
+    <div class="button-container">
+      <a href="#" class="button">More></a>
+      <a href="#skills" class="button ">CV></a>
+  </div>    
     </section>
+    <footer>
+      <div class="button-container2">
+        <a href="#" class="button">Contact></a>
+        <a href="#skills" class="button ">LinkedIn></a>
+    </div>    
+    <p class="copyright">&copy; Copyright Joeri Van De Weyer 2024</p>
+    <button onClick="toTop()" id="toTop" title="Back to Top!">^</button>
+    </footer>
     <!---------------------------------------------------- SCRIPT STICKY NAVBAR DISPLAY ON SCROLL -->
     <script>
       let lastScrollTop = 0;
@@ -95,13 +155,18 @@
 
         if (scrollTop > lastScrollTop) {
           // Scroll down - hide navbar
-          navbar.style.top = "-60px"; // Adjust height based on your navbar's height
+          navbar.style.top = "-90px"; // Adjust height based on your navbar's height
         } else {
           // Scroll up - show navbar
           navbar.style.top = "0";
         }
         lastScrollTop = scrollTop;
       });
+
+      function toTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
     </script>
   </body>
 </html>

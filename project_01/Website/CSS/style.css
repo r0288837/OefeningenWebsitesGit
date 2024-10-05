@@ -54,26 +54,28 @@ body {
 }
 
 /* ------------------------------------------------- line COLOURS */
-.whiteLine{
+.whiteLine {
   text-decoration-color: var(--whiteYellow); /* Change underline color */
-  
 }
-.orangeLine{
+.orangeLine {
   text-decoration-color: var(--orangeSoft); /* Change underline color */
 }
 
-/* ------------------------------------------------- HEADINGS */
+/* ------------------------------------------------- HEADINGS & GENERAL MARKUP */
 h1 {
-  margin-top: 69px;
-  margin-bottom: 88px;
-text-decoration: underline;
-text-underline-offset: 20px;
-text-decoration-thickness: 3px;
-font-family: 'Space Mono';
+  margin-top: 55px;
+  margin-bottom: 44px;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 3px;
+  font-family: "Space Mono";
 }
 
-h2{
+h2 {
+}
 
+p{
+  margin-top: 13px;
 }
 
 /* ----------------------------------------------------------------------------------------------------- */
@@ -81,7 +83,7 @@ h2{
 /* -------------------------------------------------------------HEADER */
 .header {
   height: 90vh; /* Set header height to 90% of the viewport height */
-  background-image: url('/IMG/zengarden.jpg'); /* Background image URL */
+  background-image: url("/IMG/zengarden.jpg"); /* Background image URL */
   background-size: cover; /* Cover the entire header area */
   background-position: center; /* Center the background image */
   display: flex; /* Flexbox for centering content */
@@ -96,39 +98,40 @@ h2{
   max-width: 30%;
   height: auto;
   position: absolute;
-  top: 50%; 
-  left: 60%; 
-  transform: translate(-50%, -50%); 
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
   background-color: var(--blueDark);
-  opacity: .7;
+  opacity: 0.7;
   padding: 25px;
-  border-radius: 22px; 
+  border-radius: 22px;
   border: 2px solid var(--orangeSoft);
   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);  */
 }
-img.icon{
+img.iconHeader {
   width: 20%;
   margin-top: 30px;
   margin-bottom: 23px;
-  filter: brightness(0) saturate(100%) invert(73%) sepia(64%) saturate(2682%) hue-rotate(359deg) brightness(104%) contrast(104%);
+  filter: brightness(0) saturate(100%) invert(73%) sepia(64%) saturate(2682%)
+    hue-rotate(359deg) brightness(104%) contrast(104%);
 }
 
 .link-button {
   font-weight: 500;
-  font-family: 'Space Mono';
+  font-family: "Space Mono";
   position: absolute;
-  bottom: -25px; 
-  left: 50%; 
-  transform: translateX(-50%); 
-  background-color: var(--blueDark); 
-  color: var(--orangeSoft); 
-  text-decoration: none; 
-  padding: 5px 10px; 
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--blueDark);
+  color: var(--orangeSoft);
+  text-decoration: none;
+  padding: 5px 10px;
   border: 2px solid var(--orangeSoft);
-  border-radius: 5px; 
-  display: inline-block; 
-  cursor: pointer; 
-  transition: color 1.3s; 
+  border-radius: 22px;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 1.3s;
 }
 
 .link-button:hover {
@@ -142,7 +145,7 @@ img.icon{
   min-height: 8vh;
   background-color: var(--blueDark);
   padding: 10px 0;
-  text-align: center; 
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,22 +164,177 @@ img.icon{
   transition: color 1.3s;
 }
 .navbar a:hover {
-color: var(--orangeSoft);  
+  color: var(--orangeSoft);
 }
 .navbar a.active {
-  color: var(--orangeSoft);  
-  }
-  #navbar {
-    position: sticky;
-    top: 0;
-    transition: top 1.3s;
-    overflow: hidden;}
-  /* ----------------------------------------------------------------------------------------------------- */
+  color: var(--orangeSoft);
+}
+#navbar {
+  position: sticky;
+  top: 0;
+  transition: top 1.3s;
+  overflow: hidden;
+}
+/* ----------------------------------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------ */
 /* -------------------------------------------------------------SECTIONS */
 
-section{
-  min-height: 100vh;
+section {
+  min-height: 66vh;
+  text-align: center;
+  padding-bottom: 66px;
 }
 
+/* FIRST */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-column {
+  flex: 1; /* Takes up available space */
+  padding-right: 20px; /* Space between columns */
+  font-size: .8em;
+}
+.text-column .icon{
+  width: 8%;
+  margin-top: 22px;
+  filter: brightness(0) saturate(100%) invert(14%) sepia(82%) saturate(2379%) hue-rotate(205deg) brightness(98%) contrast(110%);
+}
+
+.image-column {
+  flex: 1; /* Takes up available space */
+}
+
+.image-column img {
+  max-width: 88%; /* Ensures the image is responsive */
+  height: auto; /* Maintains aspect ratio */
+  border: 4px solid var(--orangeSoft);
+  border-radius: 33px;
+  -webkit-box-shadow: 33px -29px 34px -39px rgba(255,180,0,1);
+  -moz-box-shadow: 33px -29px 34px -39px rgba(255,180,0,1);
+  box-shadow: 33px -29px 34px -39px rgba(255,180,0,1);
+}
+
+.button-container {
+  display: flex; /* Enables Flexbox for the container */
+  justify-content: center; /* Centers buttons horizontally */
+  margin: 0; /* Optional: Adds some space above and below */
+  margin-top: 88px;
+}
+.button-container2 {
+  display: flex; /* Enables Flexbox for the container */
+  justify-content: start; /* Centers buttons horizontally */
+  margin: 0; /* Optional: Adds some space above and below */
+  margin-left: 55px;
+  padding-top: 55px;
+  
+}
+
+.button {
+  background-color: var(--blueDark); 
+  color: var(--orangeSoft);
+  text-align: center; /* Centers the text */
+  padding: 10px 20px; /* Adjust padding for button size */
+  margin: 0 10px; /* Adds space between the buttons */
+  border: 4px solid var(--orangeSoft); /* Removes default border */
+  border-radius: 25px; /* Optional: rounds the button corners */
+  text-decoration: none; /* Removes underline from link */
+  transition: color 1.3s; /* Smooth transition for hover effect */
+  font-family: 'Space Mono';
+}
+
+.button:hover {
+  color: var(--whiteYellow); /* Change to your desired hover color */
+}
+.button2 {
+  background-color: var(--orangeSoft); 
+  color: var(--blueDark);
+  text-align: center; /* Centers the text */
+  padding: 10px 20px; /* Adjust padding for button size */
+  margin: 0 10px; /* Adds space between the buttons */
+  border: 3px solid var(--whiteYellow); /* Removes default border */
+  border-radius: 25px; /* Optional: rounds the button corners */
+  text-decoration: none; /* Removes underline from link */
+  transition: color 1.3s; /* Smooth transition for hover effect */
+  font-family: 'Space Mono';
+}
+
+.button2:hover {
+  color: var(--whiteYellow); /* Change to your desired hover color */
+}
+/* SECTION SKILLS */
+
+section#skills {
+  padding-top: 55px;
+}
+section#skills h1{
+  margin-bottom: 88px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content:space-evenly;
+  align-items: center;
+  align-content: normal;
+  
+}
+
+/* SECTION PROJECTS*/
+
+.projects img {
+  margin-top: 88px;
+  max-width: 200px;
+  border: 3px solid var(--orangeSoft);
+  border-radius: 13px;
+  
+  /* Define a slightly bigger size on hover */
+  transition: transform 3s;
+}
+.projects img:hover{
+  cursor: pointer;
+  /* transform:scale(150%); */
+  transform: scale(2);  /* Make the image 10% bigger on hover */
+}
+
+/* ------------------------------------------------------------------------------footer */
+
+footer {
+  min-height: 25vh;
+  background-color: var(--orangeSoft);
+  position: relative;
+}
+p.copyright{
+  text-align: center;
+  font-size: .7em;
+  font-family: 'PT Serif';
+}
+
+button#toTop{
+  width: 55px;
+  height: 55px;
+  background-color: var(--blueDark);
+  color: var(--orangeSoft);
+  font-weight: 800;
+  font-size: 1.3em;
+  padding-top: 3px;
+  border: 4px solid var(--whiteYellow);
+  border-radius: 55px;
+  position: absolute;
+  right: 10%;
+  bottom: 77%;
+  transition: background-color 2s;
+  
+}
+button#toTop:hover{
+  cursor: pointer;
+  color: var(--blueDark);
+  background-color: var(--whiteYellow);
+}
 
