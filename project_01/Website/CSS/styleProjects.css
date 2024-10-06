@@ -1,0 +1,29 @@
+/* CSS SPECIFIC TO PROJECTS PAGE */
+.projectitem{
+    padding-top: 66px;
+    max-width: 66%;
+    margin: auto;
+}
+#bootstrapprojects .projectitem {
+    color: var(--whiteYellow);
+}
+.projectitem img{
+width: 400px;
+height: auto;
+border-radius: 22px;
+transition: transform 3s;
+}
+
+.projectitem img:hover{
+    cursor: pointer;
+    /* transform:scale(150%); */
+    transform: scale(1.4);  /* Make the image 10% bigger on hover */
+  }
+
+  #schoolprojects img{
+border: 2px solid var(--orangeSoft);
+  }
+  #bootstrapprojects img{
+    border: 2px solid var(--orangeSoft);
+      }
+    
