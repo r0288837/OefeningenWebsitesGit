@@ -1,3 +1,116 @@
 /* CSS SPECIFIC TO CV PAGE */
+.containercv{
+    max-width: 77%;
+    margin: auto;
+}
+.flexcv{
+    display: flex;
+  
+}
+.flexcv img{
+    max-width: 22%; /* Ensures the image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    border: 5px solid var(--blueDark);
+    object-fit: cover;
+    border-radius: 30%;
+    margin-left: 33px;
+    margin-bottom: 33px;
+}
 
-    
+
+.containercvcontent {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.containercvcontent h2{
+    padding-bottom: 33px;
+}
+/* Left Column */
+.left-column, .right-column {
+    width: 50%;
+    padding: 20px;
+}
+
+/* Center Titles */
+.left-column h2, .right-column h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Left Column Content */
+.left-column p {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Right Column Table */
+.right-column table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.right-column table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.right-column table td:first-child {
+    width: 50%;
+}
+
+
+.containerskill {
+    width: 50%;
+    margin: auto;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+  }
+  .cpp, .java, .python, .c, .motivation, .teamwork {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: var(--blueDark);
+    border-radius: 20px;
+    background-color: var(--orangeSoft);
+    margin-bottom: 11px;
+  }
+  .cpp {
+    width: 90%;
+    /* background-color: #4caf50; */
+  }
+  .java, .teamwork {
+    width: 80%;
+    /* background-color: #2196f3; */
+  }
+  .python {
+    width: 65%;
+    /* background-color: #f44336; */
+  }
+  .c {
+    width: 60%;
+    /* background-color: #808080; */
+  }
+  .motivation {
+    width: 90%;
+    /* background-color: #808080; */
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 20px; /* Adjust indentation */
+}
+
+ul ul {
+    list-style-type: none; /* Style for subitems */
+    margin-left: 20px; /* Further indentation for subitems */
+}
+
+.cvcontenttitel{
+    font-family: 'PT Serif';
+    margin-bottom: 33px;
+}
