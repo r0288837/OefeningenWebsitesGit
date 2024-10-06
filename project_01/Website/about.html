@@ -40,31 +40,23 @@
     />
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/styleAbout.css" />
     <!-- TITLE -->
     <title>Wired By Weyer | HOME</title>
   </head>
   <body>
     <!-- _____________________________________________________________________HEADER -->
-    <header class="header headerindex">
-      <!-- <h1>Welcome to My Website</h1> -->
-      <div class="box">
-        <p>Howdy, partner.</p>
-        <p><img src="/ICON/greet.png" alt="Greet Icon" class="iconHeader" /></p>
-        <p>
-          Joeri Van De Weyer,
-          <span class="fontSerif orangeText">Full Stack Developer.</span>
-        </p>
-        <p>Pleasure to make your acquaintance!</p>
-        <a href="#about" class="link-button">About></a>
-        <!-- Link styled as a button -->
+    <header class="header headerabout">
+      <div class="typewriter">
+        <h1>Learn more about me <a href="#about" class="button-about">></a></h1>
       </div>
     </header>
     <!-- _________________________________________________________________NAVBAR -->
 
     <nav id="navbar" class="navbar fontMono">
       <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="cv.html">CV</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -75,78 +67,109 @@
 
     <section id="about">
       <h1 class="blueText orangeLine">ABOUT</h1>
-      <div class="container">
-        <div class="text-column">
+      <div class="flex-container abouticons">
+        <div>
           <p>
-            <img src="/ICON/flag.png" alt="Flag Icon" class="icon" />
-          </p>
-          <p>Hailing from Balen, Antwerp, Belgium,</p>
-          <p>
-            <img src="/ICON/school.png" alt="School Icon" class="icon" />
+            <img src="/ICON/school.png" alt="School Icon" class="iconblue" />
           </p>
           <p>
-            <span class="fontMono orangeText"
-              >I'm a Junior Full Stack Web Developer & Graduate Programmer</span
-            >.
-          </p>
-          <p>
-            <img src="/ICON/love.png" alt="Love in Hand Icon" class="icon" />
-          </p>
-          <p>
-            Programming clean and responsive applications or websites is very
-            satisfactory to me.
-          </p>
-          <p>
-            However, what I find most exciting is creating appealing, practical
-            and dynamic user experiences.
+            I respect elderly people who reinvent themselves in modern times.
+            For example, I went back to school at the astounding age of 33.
           </p>
         </div>
-        <div class="image-column">
-          <img src="/IMG/profile.png" alt="Profile image" />
+        <div>
+          <p><img src="/ICON/music.png" class="iconorange" alt="" /></p>
+          <p>
+            While working, or driving for that matter, I prefer to listen to
+            classical compositions, or even medieval European music.
+          </p>
+        </div>
+
+        <div>
+          <p><img src="/ICON/group.png" class="iconblue" alt="" /></p>
+          <p>
+            Human connection is in my opinion of upmost importance, so I try to
+            be approachable, respectful and helpful. Comedy is a necessity.
+          </p>
+        </div>
+
+        <div>
+          <p><img src="/ICON/tree.png" class="iconorange" alt="" /></p>
+          <p>
+            To create some contrast I frequently go hiking deep in the woods,
+            equipped to sit down, cook something and enjoy the serenity.
+          </p>
+        </div>
+
+        <div>
+          <p><img src="/ICON/dog.png" class="iconblue" alt="" /></p>
+          <p>
+            A stranger is just a possible friend you haven’t met yet. However,
+            my best friend will always be my pupper. Well, he’s more of a mutt.
+          </p>
         </div>
       </div>
+      <div class="containerabout">
+        <p class="blueText">
+          Born and raised in the Belgian countryside in the 90’s, I’ll always be
+          grateful for having spent my youth outdoors. In secondary school, my
+          favourite subjects were languages, IT and history. Despite
+          prioritising football over studying, I was a relative good student. A
+          major injury however compelled me to change routes later in life, thus
+          I decided to reinvent myself and invest my time and resources in
+          relevant and future-proof education.
+        </p>
+        <div class="flexabout">
+          <img src="/IMG/codemonkey.jpg" alt="" />
+          <div class="flexaboutright">
+            <p>
+              IT, and technology in general, has always interested me, however
+              my first true concrete experience was just a few years ago, when I
+              applied for a 1 year course of Full Stack Development. Finishing
+              this succesfully, and having really enjoyed it, I decided to
+              commit fully and acquire a Graduate in Programming as well.
+            </p>
+            <p>
+              Programming clean and responsive applications or websites is very
+              satisfactory to me. However, what I find most exciting is creating
+              appealing, practical and dynamic user experiences. I love how IT
+              evolved to be a industry in which interaction and teamwork make
+              the dream work.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <blockquote>"Teamwork makes the dream work."</blockquote>
       <div class="button-container">
-        <a href="about.html#about" class="button">More></a>
         <a href="#skills" class="button">Skills></a>
+        <a href="cv.html" class="button">CV></a>
       </div>
     </section>
     <!-- _____________________________________________________________________SECOND SECTION -->
     <section id="skills" class="blueBackground">
       <h1 class="orangeText whiteLine">SKILLS</h1>
-
-      <div class="flex-container">
-        <img src="/ICON/html.png" alt="Icon HTML" />
-        <img src="/ICON/css.png" alt="Icon CSS" />
-        <img src="/ICON/js.png" alt="Icon JS" />
-        <img src="/ICON/php.png" alt="Icon PHP" />
+      <div class="containerskill">
+        <div class="python">C#</div>
+      </div>
+      <!-- <h3>Java</h3> -->
+      <div class="containerskill">
+        <div class="java">CSS</div>
+      </div>
+      <!-- <h3>C++</h3> -->
+      <div class="containerskill">
+        <div class="cpp">HTML</div>
+      </div>
+      <!-- <h3>C</h3> -->
+      <div class="containerskill">
+        <div class="c">Databanken</div>
       </div>
       <div class="button-container">
-        <a href="about.html#skills" class="button2">More></a>
         <a href="projects.html" class="button2">Projects></a>
+        <a href="cv.html" class="button2">CV></a>
       </div>
     </section>
-    <!-- _____________________________________________________________________THIRD SECTION -->
-    <section id="projects">
-      <h1 class="blueText orangeLine">PROJECTS</h1>
-      <div class="flex-container projects">
-        <a href="#about">
-          <img
-            src="/IMG/Projecten/littlebelgium.png"
-            alt="Image 1"
-            title="Visit LittleBelgium"
-          />
-        </a>
-        <img src="/IMG/Projecten/onbetaaldefacturen.png" alt="Image 2" />
-        <img src="/IMG/Projecten/happyhair.png" alt="Image 3" />
-        <img src="/IMG/Projecten/haaranoek.png" alt="Image 4" />
-        <img src="/IMG/Projecten/dockx.png" alt="Image 5" />
-      </div>
-      <div class="button-container">
-        <a href="projects.html" class="button">More></a>
-        <a href="cv.html" class="button">CV></a>
-      </div>
-    </section>
-    <!-- _____________________________________________________________________FIRST SECTION -->
+    <!-- _____________________________________________________________________FOOTER SECTION -->
     <footer>
       <div class="button-container2">
         <a href="contact.html" class="button">Contact></a>

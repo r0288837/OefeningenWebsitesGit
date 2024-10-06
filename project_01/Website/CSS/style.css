@@ -83,7 +83,6 @@ p{
 /* -------------------------------------------------------------HEADER */
 .header {
   height: 90vh; /* Set header height to 90% of the viewport height */
-  background-image: url("/IMG/zengarden.jpg"); /* Background image URL */
   background-size: cover; /* Cover the entire header area */
   background-position: center; /* Center the background image */
   display: flex; /* Flexbox for centering content */
@@ -93,7 +92,13 @@ p{
   text-align: center; /* Center text */
   position: relative;
 }
+.headerindex{
+  background-image: url("/IMG/zengarden.jpg"); /* Background image URL */
+}
+.headerabout{
+  background-image: url("/IMG/homeoffice.jpg"); /* Background image URL */
 
+}
 .box {
   max-width: 30%;
   height: auto;

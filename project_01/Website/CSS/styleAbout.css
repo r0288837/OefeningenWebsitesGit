@@ -1,0 +1,137 @@
+/* CSS SPECIFIC TO ABOUT PAGE */
+
+.typewriter{
+  position: absolute;
+  left: 88px;
+  bottom: 88px;
+}
+
+.typewriter h1 {
+  color: var(--orangeSoft);
+  background-color: var(--blueDark);
+  padding: 7px;
+  opacity: .7;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+.button-about{
+  background-color: var(--orangeSoft); 
+  color: var(--blueDark);
+  text-align: center; /* Centers the text */
+  padding: 5px 5px; /* Adjust padding for button size */
+  margin: 0 0px; /* Adds space between the buttons */
+  border: 2px solid var(--orangeSoft); /* Removes default border */
+  border-radius: 25px; /* Optional: rounds the button corners */
+  text-decoration: none; /* Removes underline from link */
+  transition: color 1.3s; /* Smooth transition for hover effect */
+  font-family: 'Space Mono';
+}
+.button-about:hover{
+  cursor: pointer;
+  color: var(--whiteYellow);
+}
+
+.abouticons{
+  max-width: 88%;
+  margin: auto;
+  margin-top: 66px;
+}
+.abouticons div{
+  margin-right: 33px;
+}
+.abouticons div img {
+  margin-bottom: 33px;
+}
+.abouticons div .iconblue{
+  filter: brightness(0) saturate(100%) invert(14%) sepia(82%) saturate(2379%) hue-rotate(205deg) brightness(98%) contrast(110%);
+
+}
+.abouticons div .iconorange{
+  filter: brightness(0) saturate(100%) invert(82%) sepia(33%) saturate(6047%) hue-rotate(0deg) brightness(105%) contrast(101%);
+}
+
+.containerabout {
+  padding-top: 111px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.flexabout{
+  margin-top: 99px;
+  display: flex;
+}
+.flexabout img{
+  margin-right: 33px;
+  max-width: 500px; /* Ensures the image is responsive */
+  height: auto; /* Maintains aspect ratio */
+  border: 4px solid var(--blueDark);
+  border-radius: 33px;
+  -webkit-box-shadow: 14px 10px 25px -3px rgba(0,51,132,1);
+  -moz-box-shadow: 14px 10px 25px -3px rgba(0,51,132,1);
+  box-shadow: 14px 10px 25px -3px rgba(0,51,132,1);
+}
+.flexaboutright{
+  max-width: 44%;
+  margin: auto;
+}
+
+blockquote{
+  font-size: 2em;
+  margin-top: 117px;
+  margin-bottom: 100px;
+  font-family: 'Space Mono';
+  color: var(--blueDark);
+  font-weight: 800;
+}
+
+
+.containerskill {
+  width: 50%;
+  margin: auto;
+  background-color: rgb(231, 231, 231);
+  border-radius: 20px;
+}
+.cpp, .java, .python, .c {
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: var(--blueDark);
+  border-radius: 20px;
+  background-color: var(--orangeSoft);
+  margin-bottom: 11px;
+}
+.cpp {
+  width: 90%;
+  /* background-color: #4caf50; */
+}
+.java {
+  width: 80%;
+  /* background-color: #2196f3; */
+}
+.python {
+  width: 65%;
+  /* background-color: #f44336; */
+}
+.c {
+  width: 60%;
+  /* background-color: #808080; */
+}
