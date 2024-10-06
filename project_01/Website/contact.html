@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="Favicon/site.webmanifest" />
+    <!-- FONT LOAD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/styleContact.css" />
+    <!-- TITLE -->
+    <title>Wired By Weyer | CV</title>
+  </head>
+  <body>
+  
+    <!-- _________________________________________________________________NAVBAR -->
+
+    <nav id="navbar" class="navbar fontMono">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a  class="active"  href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- _____________________________________________________________________FIRST SECTION -->
+
+   <section>
+   
+    
+    </section>
+    <section class="blueBackground whiteText">
+       
+    </section>
+    <section>
+     
+      </section>
+    <!-- _____________________________________________________________________FOOTER SECTION -->
+    <footer>
+      <div class="button-container2">
+        <a href="contact.html" class="button">Contact></a>
+        <a href="#skills" class="button">LinkedIn></a>
+      </div>
+      <p class="copyright">&copy; Copyright Joeri Van De Weyer 2024</p>
+      <button onClick="toTop()" id="toTop" title="Back to Top!">^</button>
+    </footer>
+    <!---------------------------------------------------- SCRIPT STICKY NAVBAR DISPLAY ON SCROLL -->
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          // Scroll down - hide navbar
+          navbar.style.top = "-90px"; // Adjust height based on your navbar's height
+        } else {
+          // Scroll up - show navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+
+      function toTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+  </body>
+</html>

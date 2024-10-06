@@ -1,0 +1,9 @@
+/* CSS SPECIFIC TO CONTACT PAGE */
+.containercontact{
+    max-width: 77%;
+    margin: auto;
+}
+.flexcontact{
+    display: flex;
+  
+}
