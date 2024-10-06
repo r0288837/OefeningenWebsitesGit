@@ -1,9 +1,66 @@
+/* import main because of root colours */
+@import url('/CSS/style.css');
 /* CSS SPECIFIC TO CONTACT PAGE */
+img#arrowDown{
+width: 69px;
+}
+
 .containercontact{
-    max-width: 77%;
+    max-width: 66%;
     margin: auto;
 }
 .flexcontact{
     display: flex;
   
+}
+.contactleft, .contactright{
+    width: 50%;
+}
+
+#contactform{
+    padding-top: 100px;
+}
+#contactform input::placeholder{
+    font-family: 'Space Mono';
+}
+#contactform input, textarea, select{
+    width: 66%;
+    padding: 13px 33px;
+    border-radius: 33px;
+    background-color: var(--orangeSoft);
+    color: var(--whiteYellow);
+    font-weight: 400;
+    margin-bottom: 33px;
+}
+select{
+    max-width: 33%;
+    margin-top: 33px;
+}
+textarea{
+    height: 333px;
+}
+textarea:focus, #contactform input:focus, select:focus{
+    background-color: var(--whiteYellow);
+    color: var(--blueDark);
+    border: 3px solid var(--orangeSoft);
+    font-weight: 400;
+    margin-bottom: 33px;
+}
+button#submit:hover{
+    cursor: pointer;
+}
+
+.contactleft img{
+    width: 88%;
+    height: auto;
+    border: 2px solid var(--orangeSoft);
+    border-radius: 22px;
+}
+.contactleft, .contactright{
+    padding-top: 100px;
+}
+
+.contactright hr{
+    height: 3px;
+    background-color: var(--orangeSoft);
 }

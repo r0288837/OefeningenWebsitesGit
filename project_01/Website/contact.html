@@ -45,7 +45,6 @@
     <title>Wired By Weyer | CV</title>
   </head>
   <body>
-  
     <!-- _________________________________________________________________NAVBAR -->
 
     <nav id="navbar" class="navbar fontMono">
@@ -54,22 +53,127 @@
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="cv.html">CV</a></li>
-        <li><a  class="active"  href="contact.html">Contact</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <!-- _____________________________________________________________________FIRST SECTION -->
 
-   <section>
-   
-    
+    <section>
+      <h1 class="blueText orangeLine">CONTACT</h1>
+      <p>
+        If you are an employer, or want to collaborate, please fill in the
+        contact form and I will get in touch.
+      </p>
+      <div class="button-container">
+        <a href="#contactform" class="button">
+          <img id="arrowDown" src="/ICON/down.png" alt="" />
+        </a>
+      </div>
     </section>
     <section class="blueBackground whiteText">
-       
+      <div class="containercontact">
+        <!-- BEGIN FORM -->
+        <!-- <form action="https://tm-statweb.be/forms.php" method="POST"> -->
+        <form id="contactform" action="#" method="POST">
+          <div class="flexcontact">
+            <div class="contactleft">
+              <!-- 4 FORMINPUTS -->
+              <p>
+                <!-- <label for="naam">Naam: -->
+                <input
+                  placeholder="first name"
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  required
+                />
+                <!-- </label> -->
+              </p>
+              <p>
+                <!-- <label for="naam">Naam: -->
+                <input
+                  placeholder="last name"
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  required
+                />
+                <!-- </label> -->
+              </p>
+              <p>
+                <!-- <label for="naam">Naam: -->
+                <input
+                  placeholder="info@mail.com"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+                <!-- </label> -->
+              </p>
+              <p>
+                <!-- <label for="naam">Naam: -->
+                <input
+                  placeholder="phone number (optional)"
+                  type="number"
+                  id="number"
+                  name="number"
+                />
+                <!-- </label> -->
+              </p>
+            </div>
+            <div class="contactright">
+              <!-- 1 MESSAGE INPUT -->
+              <p>
+                <!-- <label for="message">Your Message:</label> -->
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  cols="40"
+                  placeholder="Write your message here..."
+                ></textarea>
+              </p>
+            </div>
+          </div>
+          <!-- SELECT/RADIO INPUT -->
+          <!-- <label for="role">Role:</label> -->
+          <select required id="role" name="role">
+            <option value="" disabled selected>Select your role</option>
+            <option value="student">Student</option>
+            <option value="direct-employer">Direct Employer</option>
+            <option value="job-agency">Job Agency</option>
+          </select>
+
+          <button id="submit" class="button2" type="submit">Send</button>
+
+          <!-- END FORm -->
+        </form>
+      </div>
     </section>
     <section>
-     
-      </section>
+      <div class="containercontact">
+       
+          <div class="flexcontact">
+            <div class="contactleft">
+              <!-- 4 FORMINPUTS -->
+              <img src="/IMG/map.png" alt="">
+            </div>
+            <div class="contactright">
+              <!-- 4 FORMINPUTS -->
+              <p>
+              Joeri Van De Weyer  
+              </p>
+              <p class="blueText fontMono">Junior Full Stack Web Developer</p>
+              <p class="blueText fontMono">Graduate Programmer</p>
+              <hr>
+              <p class="fontSerif">Antwerp, BELGIUM</p>
+            </div>
+          </div>
+    
+      </div>
+    </section>
     <!-- _____________________________________________________________________FOOTER SECTION -->
     <footer>
       <div class="button-container2">
