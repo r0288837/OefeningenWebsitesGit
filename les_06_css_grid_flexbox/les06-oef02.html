@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 2</title>
+    <style>
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 0.2fr 1.2fr 1.2fr 0.8fr;
+            grid-template-areas:
+            "nav nav nav nav"
+            "sidebar main main main"
+            "sidebar content1 content2 content3"
+            "footer footer footer footer";
+            grid-gap: 0.4rem;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>Navbar</nav>
+        <main>Main</main>
+        <section id="sidebar">Sidebar</section>
+        <section id="content1">Content1</section>
+        <section id="content2">Content2</section>
+        <section id="content3">Content3</section>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
