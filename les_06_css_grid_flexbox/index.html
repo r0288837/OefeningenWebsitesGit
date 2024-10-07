@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      *,
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: cyan;
+        font-family: 'Space Mono';
+      }
+      section#bg{
+        height: 100vh;
+        /* background-color: cyan; */
+        background-image: url(kompas.jpg);
+        background-size: cover; /* Cover the entire header area */
+        background-position: center; /* Center the background image */
+       
+      }
+      div.sticky{
+        position: fixed;
+        padding: 33px;
+      }
+      .left{
+        left: 0;
+        top: 50%;
+       transform: translate(0px,-50%);
+      }
+      .top{
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0px);
+      }
+      .right{
+        right: 0;
+        top: 50%;
+        transform: translate(0px,-50%);
+      }
+      .bottom{
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%,0px);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="bg">
+        <div class="sticky left">test</div>
+        <div class="sticky top">test</div>
+        <div class="sticky right">test</div>
+        <div class="sticky bottom">test</div>
+    </section>
+  </body>
+</html>
