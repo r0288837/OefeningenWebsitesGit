@@ -102,7 +102,7 @@ height: 2px;}
 /* -------------------------------------------------------------HEADER */
 .header {
   height: 90vh;
-  background-image: url('/IMG/office_ai.png');
+  background-image: url(img/office_ai.png);
   background-size: cover;
   background-position: center;
   color: white;
@@ -110,7 +110,7 @@ height: 2px;}
   padding-bottom: 50px;
 }
 .headerabout{
-  background-image: url('/IMG/zengarden.jpg');
+  background-image: url(img/zengarden.jpg);
 
 }
 .overlay {
