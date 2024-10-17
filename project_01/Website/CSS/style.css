@@ -73,7 +73,9 @@ h1 {
   text-decoration-thickness: 3px;
   font-family: "Space Mono";
 }
-
+.overlay h1, .overlay h2{
+  text-decoration: none;
+}
 h2 {
   padding-top: 44px;
   font-family: "Space Mono";
@@ -99,65 +101,97 @@ height: 2px;}
 /* ------------------------------------------------------------------------------------------------------ */
 /* -------------------------------------------------------------HEADER */
 .header {
-  height: 90vh; /* Set header height to 90% of the viewport height */
-  background-size: cover; /* Cover the entire header area */
-  background-position: center; /* Center the background image */
-  display: flex; /* Flexbox for centering content */
-  align-items: center; /* Vertically center content */
-  justify-content: center; /* Horizontally center content */
-  color: white; /* Text color */
-  text-align: center; /* Center text */
-  position: relative;
-}
-.headerindex{
-  background-image: url("/IMG/zengarden.jpg"); /* Background image URL */
+  height: 90vh;
+  background-image: url('/project01oef/IMG/office_ai.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
 }
 .headerabout{
-  background-image: url("/IMG/homeoffice.jpg"); /* Background image URL */
+  background-image: url('/project01oef/IMG/zengarden.jpg');
 
 }
-.box {
-  max-width: 30%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  background-color: var(--blueDark);
-  opacity: 0.7;
-  padding: 25px;
-  border-radius: 22px;
-  border: 2px solid var(--orangeSoft);
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);  */
-}
-img.iconHeader {
-  width: 20%;
-  margin-top: 30px;
-  margin-bottom: 23px;
-  filter: brightness(0) saturate(100%) invert(73%) sepia(64%) saturate(2682%)
-    hue-rotate(359deg) brightness(104%) contrast(104%);
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--orangeSoft);
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-bottom: 9vh;
 }
 
-.link-button {
-  font-weight: 500;
-  font-family: "Space Mono";
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  transform: translateX(-50%);
+.darktext {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-start; /* Align children to the start */
+}
+
+.header h1 {
+  font-family: 'Space Mono';
+  margin-bottom: 10px;
+  color: var(--whiteYellow);
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s forwards; /* Animation for h1 */
+  animation-delay: 0.5s; /* Delay before the animation starts */
+}
+
+.header h2 {
+font-size: 1.5rem;
+  color: var(--orangeSoft);
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s forwards; /* Animation for h2 */
+  animation-delay: 2s; /* Delay before the animation starts */
+}
+
+.header .button {
+  font-family: 'Space Mono';
+  font-size: 1.2em;
+  padding: 12px 22px; 
+  text-decoration: none;
   background-color: var(--blueDark);
   color: var(--orangeSoft);
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 2px solid var(--orangeSoft);
-  border-radius: 22px;
-  display: inline-block;
-  cursor: pointer;
-  transition: color 1.3s;
+  border: 2px solid var(--orangeSoft); 
+  border-radius: 33px;
+  cursor: pointer; 
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s forwards; /* Animation for button */
+  animation-delay: 3.5s; /* Delay before the animation starts */
+}
+.header .button:hover {
+  color: var(--whiteYellow);
+  border-color: var(--whiteYellow);
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+      opacity: 1; /* Fully visible */
+  }
+}
+/* typewriter */
+@keyframes typewriter {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
 }
 
-.link-button:hover {
-  color: var(--whiteYellow);
+@keyframes blink {
+  0% {
+      border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  100% {
+      border-right-color: transparent;
+  }
 }
 
 /* ------------------------------------------------------------------- */
