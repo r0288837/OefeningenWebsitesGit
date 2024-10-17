@@ -50,7 +50,7 @@ button#submit:hover{
     cursor: pointer;
 }
 
-.contactleft img{
+.contactleft iframe{
     width: 88%;
     height: auto;
     border: 2px solid var(--orangeSoft);
