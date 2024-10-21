@@ -6,6 +6,9 @@ header {
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
   }
   
+
+
+  /* ----------------------------------------------------------------------------- */
   .navbartop {
     height: 13vh; /* Height of the navbar */
     z-index: 1020; /* Ensure navbar stays on top */
@@ -19,6 +22,31 @@ header {
   text-align: center;
   width: 100%;
 }
+
+/* Override the background color of the navbar toggler */
+.navbar-toggler {
+  background-color: var(--orangeSoft); /* Set the background color */
+  border: none; /* Remove the default border */
+}
+
+/* Change the color of the bars inside the hamburger icon */
+.navbar-toggler .navbar-toggler-icon {
+  background-color: var(--darkBlue); /* Set the color of the inner stripes */
+}
+
+/* Change the background color when toggler is active (expanded) */
+.navbar-toggler:not(.collapsed) {
+  background-color: var(--whiteYellow); /* Background color when active */
+}
+
+/* Hide the dropdown caret for small devices */
+@media (max-width: 576px) {
+  .navbar-nav .dropdown-toggle::after {
+    display: none; /* Hides the dropdown arrow */
+  }
+  
+}
+
 
 /* Override for larger screens to center the navbar content */
 @media (min-width: 768px) {
@@ -35,6 +63,8 @@ header {
 @media (min-width: 576px) {
 
 }
+
+
 
 @media (min-width: 768px) {
   
