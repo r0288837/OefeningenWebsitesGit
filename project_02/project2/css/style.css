@@ -30,7 +30,7 @@
     color: var(--blueDark);
   }
   .orangeText {
-    color: var(--orangeSoft);
+    color: var(--orangeSoft) !important;
   }
   .whiteText {
     color: var(--whiteYellow);
@@ -66,5 +66,9 @@
     background-color: var(--blueDark);
     color: var(--orangeSoft);
   }
+  .btn {
+    transition: color 0.8s ease, background-color 0.8s ease; /* Smooth transitions for color and background color */
+  }
   
+
 

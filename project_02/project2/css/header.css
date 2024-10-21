@@ -14,13 +14,112 @@ header {
   .navbar {
     height: 100%; /* No need for specific height, adjust padding instead */
   }
+/* Default behavior: Toggler left-aligned, navbar content centered on small devices and above */
+.navbar-nav {
+  text-align: center;
+  width: 100%;
+}
 
+/* Override for larger screens to center the navbar content */
+@media (min-width: 768px) {
+  .navbar-nav {
+    justify-content: center; /* Centers the nav items */
+  }
+}
+
+/* Keep the toggler aligned to the left on small screens */
+.navbar-toggler {
+  margin-right: auto; /* Aligns the toggler to the left */
+}
 /* VANAF SMALL SCREENS */
 @media (min-width: 576px) {
 
 }
 
 @media (min-width: 768px) {
+  
+/* General styles for all nav links */
+a.nav-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit; /* Ensures the original color is preserved */
+  transition: color 2s ease; /* Transition for the color */
+}
+
+/* ::after only for nav-links that are not 'Projects' */
+a.nav-link:not(.classX)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjusts the distance of the line from the text */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--whiteYellow); /* Color of the underline */
+  transition: width 1.5s ease;
+}
+
+/* Hover effect for nav links except 'Projects' */
+a.nav-link:hover {
+  color: var(--whiteYellow) !important; /* Change text color on hover */
+}
+
+/* Underline transition for all nav links except 'Projects' */
+a.nav-link:not(.classX):hover::after {
+  width: 100%; /* Expands the underline from 0 to full width */
+}
+
+
+/* Remove the default underline */
+a.dropdown-item {
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* Remove default underline */
+  color: inherit;
+  transition: color 2s ease; /* Transition for the text color */
+}
+/* Remove the default underline */
+a.dropdown-item {
+  position: relative;
+  display: inline-block;
+  text-decoration: none; /* Remove default underline */
+  color: inherit;
+  transition: color 2s ease, background-color 2s ease; /* Smooth transitions for color and background */
+}
+
+/* Create the underline effect using ::after */
+a.dropdown-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Align underline to the bottom */
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--whiteYellow); /* Underline color */
+  transition: width 2s ease; /* Transition for the underline */
+  pointer-events: none; /* Prevent ::after from affecting background */
+}
+
+/* Hover effect for dropdown items */
+a.dropdown-item:hover {
+  color: var(--whiteYellow) !important; /* Change text color on hover */
+  background-color: var(--darkBlue) !important; /* Apply background color without affecting the underline */
+}
+
+/* Animate the underline width on hover */
+a.dropdown-item:hover::after {
+  width: 100%; /* Expands underline to full width */
+}
+
+/* Transition for dropdown-toggle icon (caret) */
+a.dropdown-toggle::after {
+  transition: transform 2s ease; /* Smooth transition for the arrow size over 0.3 seconds */
+}
+
+/* Enlarge arrow on hover */
+a.dropdown-toggle:hover::after {
+  transform: scale(2.2); /* Adjust the scaling factor as needed */
+}
 }
 
 @media (min-width: 992px) {

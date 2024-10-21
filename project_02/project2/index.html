@@ -42,40 +42,43 @@
         </div>
       </div>
   </header>
-
-  <!-- NAVBAR -->
-<div class="navbartop d-flex justify-content-end justify-content-sm-center blueBackground">
+<!-- NAVBAR -->
+<div class="navbartop blueBackground">
   <nav class="navbar navbar-expand-sm sticky-top">
-   <div class="container-fluid">
-     <a class="navbar-brand" href="#">Menu</a>
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-       <ul class="navbar-nav">
-         <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="#">Home</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">Features</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">Pricing</a>
-         </li>
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Dropdown link
-           </a>
-           <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="#">Action</a></li>
-             <li><a class="dropdown-item" href="#">Another action</a></li>
-             <li><a class="dropdown-item" href="#">Something else here</a></li>
-           </ul>
-         </li>
-       </ul>
-     </div>
-   </div>
- </nav>
+    <div class="container-fluid">
+      <!-- Navbar toggler aligned to the left on small devices -->
+      <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse blueBackground" id="navbarNavDropdown">
+        <ul class="navbar-nav fontMono fw-bolder mx-auto"> <!-- Added mx-auto to center the nav items on larger screens -->
+          <li class="nav-item">
+            <a class="nav-link orangeText active me-2" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link orangeText me-2" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown me-2">
+            <a class="nav-link classX orangeText dropdown-toggle me-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu blueBackground">
+              <li><a class="dropdown-item orangeText" href="#">Incasso agency</a></li>
+              <li><a class="dropdown-item orangeText" href="#">Hair salon I</a></li>
+              <li><a class="dropdown-item orangeText" href="#">Hair salon II</a></li>
+              <li><a class="dropdown-item orangeText" href="#">Metal recycling</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link orangeText me-2" href="#">CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link orangeText me-2" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
     <!-- MAIN -->
     <main>
