@@ -107,7 +107,11 @@
   .icon{
     filter: brightness(0) saturate(100%) invert(14%) sepia(82%) saturate(2379%) hue-rotate(205deg) brightness(98%) contrast(110%);
   }
-  
+  .icon2{
+      filter: brightness(0) saturate(100%) invert(63%) sepia(55%) saturate(1182%) hue-rotate(1deg) brightness(106%) contrast(103%);
+      font-weight: bold;
+
+  }
 /* Make the icons responsive */
 .responsive-icon {
   max-width: 100px; /* Set a max-width for icons */

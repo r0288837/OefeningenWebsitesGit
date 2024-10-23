@@ -32,12 +32,15 @@
 
     <header class="header2">
       
-      <div class="text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary-main">Heading Primary Main</span>
-          <span class="heading-primary-sub">The secondary heading</span>
+      <div class="text-box" style="position: relative;">
+        <h1 class=""  style="position: absolute; top: -15vh; left: 44vw;">
+          <span class=" orangeText fontMono">Joeri Van De Weyer</span>
+          <span class="heading-primary-sub mt-4 whiteText">Junior Full Stack Web Developer.</span>
+          <span class="heading-primary-sub whiteText mt-2">Graduate Programmer.</span>
+
         </h1>
-        <a href="#" class="btn btn-white btn-animated">Discover our tours</a>
+        <a href="about.html#abouttt" class="btn btn-lg btnBlue ms-5 mb-5" style="position: absolute; right: 33vw; top: 22vh;">
+          About</a>
       </div>
     </header>
 
@@ -45,36 +48,77 @@
       <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
           <!-- Navbar toggler aligned to the left on small devices -->
-          <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler me-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse blueBackground" id="navbarNavDropdown">
-            <ul class="navbar-nav fontMono fw-bolder mx-auto"> <!-- Added mx-auto to center the nav items on larger screens -->
+          <div
+            class="collapse navbar-collapse blueBackground"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav fontMono fw-bolder mx-auto">
+              <!-- Added mx-auto to center the nav items on larger screens -->
               <li class="nav-item">
-                <a class="nav-link orangeText me-2" aria-current="page" href="index.html">Home</a>
+                <a
+                  class="nav-link orangeText me-2"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link orangeText me-2" href="about.html">About</a>
               </li>
               <!-- <li class="nav-item dropdown me-2">
-                <a class="nav-link classX orangeText dropdown-toggle me-2" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link classX orangeText dropdown-toggle me-2"
+                  href="projects.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Projects
                 </a>
                 <ul class="dropdown-menu blueBackground">
-                  <li><a class="dropdown-item orangeText" href="#">Incasso agency</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Hair salon I</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Hair salon II</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Metal recycling</a></li>
+                  <li>
+                    <a class="dropdown-item orangeText" href="#"
+                      >Incasso agency</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item orangeText" href="#"
+                      >Hair salon I</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item orangeText" href="#"
+                      >Hair salon II</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item orangeText" href="#"
+                      >Metal recycling</a
+                    >
+                  </li>
                 </ul>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link orangeText me-2" href="projects.html">CV</a>
+                <a class="nav-link orangeText me-2" href="projects.html">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link orangeText me-2" href="cv.html">CV</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link orangeText me-2" href="contact.html">Contact</a>
+                <a class="nav-link orangeText me-2" href="contact.html"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -85,64 +129,36 @@
     <main>
       <section class="container-fluid marketing mx-auto whiteBackground py-5">
         <!-- Three columns of text below the carousel -->
-        <div class="row text-center mt-5 pt-5 container mx-auto">
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <div class="row text-center mt-5 pt-5 container mx-auto " id="abouttt">
+          <div class="col-lg-4 mt-5">
+            <img src="img/icon/school.png" class="icon" alt="">
+            <p class="mt-2">
+              I respect elderly people who reinvent themselves in modern times. For example, I went back to school at the astounding age of 33.</p>
           </div>
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-          </div>
+          <div class="col-lg-4 mt-5">
+            <img src="img/icon/music.png" class="icon2" alt="">
+            <p class="mt-2">
+              While working, or driving for that matter, I prefer to listen to classical compositions, or even medieval European music.    </p>      </div>
+          <div class="col-lg-4 mt-5">
+            <img src="img/icon/group.png" class="icon" alt="">
+            <p class="mt-2">
+              Human connection is in my opinion of upmost importance, so I try to be approachable, respectful and helpful. Comedy is a necessity.          </div>
         </div>
          <!-- Three columns of text below the carousel -->
-         <div class="row text-center mt-5 pt-5 container mx-auto">
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-          </div>
-          <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-            </svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
-            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-          </div>
+         <div class="row text-center mt-2 pt-5 container mx-auto mb-5">
+          <div class="col-lg-4 mt-5">
+            <img src="img/icon/tree.png" class="icon2" alt="">
+            <p class="mt-2">
+              To create some contrast I frequently go hiking deep in the woods, equipped to sit down, cook something and enjoy the serenity.</p>
+                      </div>
+        <div class="col-lg-4 mt-5">
+          <img src="img/icon/dog.png" class="icon" alt="">
+          <p class="mt-2">
+            A stranger is just a possible friend you haven’t met yet. However, my best friend will always be my pupper. Well, he’s more of a mutt.</p>      </div>
+      <div class="col-lg-4 mt-5">
+        <img src="img/icon/greet.png" class="icon2" alt="">
+        <p class="mt-2">
+          I love how IT evolved to be a industry in which interaction and teamwork make the dream work.</p>    </div>
         </div>
       </section>
       
@@ -153,42 +169,45 @@
   </div>
 </section>
 <section class="whiteBackground container-fluid pt-5">
-<div class="row featurette container mx-auto pt-5">
+<div class="row featurette container mx-auto pt-5" style="max-width: 70%;">
   <div class="col-md-7">
-    <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+    <!-- <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2> -->
+    <p class="lead">IT, and technology in general, has always interested me, however my first true concrete experience was just a few years ago, when I applied for a 1 year course of Full Stack Development. Finishing this succesfully, and having really enjoyed it, I decided to commit fully and acquire a Graduate in Programming as well.</p>
+
   </div>
   <div class="col-md-5 mb-5">
-    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+    <img src="img/codemonkey.jpg" class="img-fluid rounded mt-2" alt="">
   </div>
+  <p class="lead mt-2">Programming clean and responsive applications or websites is very satisfactory to me. However, what I find most exciting is creating appealing, practical and dynamic user experiences. I love how IT evolved to be a industry in which interaction and teamwork make the dream work.</p>
+
 </div>
-<blockquote class="blockquote text-center">
-  <p>A well-known quote, contained in a blockquote element.</p>
+<blockquote class="blockquote text-center my-5 py-5 fontMono blueText fw-bolder fs-3">
+  <p>"Teamwork makes the dream work."</p>
 </blockquote>
-<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-  <button type="button" class="btn btnBlue btn-lg px-4">Primary button</button>
-  <button type="button" class="btn btnOrange btn-lg px-4 mb-5">Secondary</button>
+<div class="d-grid gap-2 d-sm-flex justify-content-sm-center pb-5">
+  <a type="button" class="btn btnBlue btn-lg px-4 mb-1" href="cv.html">CV</a>
+  <a type="button" class="btn btnOrange btn-lg px-4 mb-1" href="projects.html">Projects</a>
 </div>
 </section>
-    <div class="container-fluid orangeBackground py-5">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2 border-top container">
-          <div class="col-md-8 d-flex align-items-center justify-content-between">
-              <div class="d-flex align-items-center">
-                  <img src="img/favicon/favicon.ico" class="img-fluid" alt="">
-                  <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
-              </div>
-              <div>
-                  <button type="button" class="btn btnBlue btn-lg px-4 mb-2">Secondary</button>
-                  <button type="button" class="btn btnBlue btn-lg px-4">Secondary</button>
-              </div>
-          </div>
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3"><a class="blueText" href="#"><img src="img/icon/css.png" alt=""></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-              <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-          </ul>
-      </footer>
+<footer class="d-flex flex-wrap justify-content-between align-items-center pt-5 pb-5 container">
+  <div class="col-md-8 d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <div class="d-flex align-items-center mb-3 mb-md-0">
+      <img src="img/favicon/favicon.ico" class="img-fluid" alt="" />
+      <span class="mb-3 mb-md-0 blueText fw-bolder ms-2">2024 &copy; J. Van De Weyer</span>
+    </div>
+    <div class="d-flex flex-column flex-md-row">
+      <a type="button" class="btn btnBlue btn-lg px-4 mb-2 mb-md-0 ms-2" href="disclaimer.html">Disclaimer</a>
+      <a type="button" class="btn btnBlue btn-lg px-4 mb-2 mb-md-0 ms-2" href="cv.html">CV</a>
+      <a type="button" class="btn btnBlue btn-lg px-4 ms-2" href="contact.html">Contact</a>
+    </div>
   </div>
+
+  <!-- Floating 'top' icon at the intersection -->
+  <a href="#" class="floating-top-icon" title="Back to top..!">
+    <img src="img/icon/top.png" alt="Back to top" />
+  </a>
+</footer>
 
 
     <!-- FOOTER -->

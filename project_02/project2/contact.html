@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/header.css" rel="stylesheet" />
-    <link href="css/sections.css" rel="stylesheet" />
-    <title>Portfolio - Home</title>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
+
+ 
+</head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/header.css" rel="stylesheet" />
+  <link href="css/sections.css" rel="stylesheet" />
+  <title>Portfolio - Home</title>
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="img/favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="img/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="img/favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link
     href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet"
   />
@@ -24,80 +44,184 @@
     href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet"
   />
-  </head>
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .cover {
+        background-image: url('/img/office_ai.png'); /* Ensure the correct image path */
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Full height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: white;
+    }
 
-  <body>
-    <div class="navbartop blueBackground sticky-top" id="navbar">
-      <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-          <!-- Navbar toggler aligned to the left on small devices -->
-          <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse blueBackground" id="navbarNavDropdown">
-            <ul class="navbar-nav fontMono fw-bolder mx-auto"> <!-- Added mx-auto to center the nav items on larger screens -->
-              <li class="nav-item">
-                <a class="nav-link orangeText me-2" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link orangeText me-2" href="about.html">About</a>
-              </li>
-              <li class="nav-item dropdown me-2">
-                <a class="nav-link classX orangeText dropdown-toggle me-2" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-                <ul class="dropdown-menu blueBackground">
-                  <li><a class="dropdown-item orangeText" href="#">Incasso agency</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Hair salon I</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Hair salon II</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Metal recycling</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link orangeText me-2" href="cv.html">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link orangeText me-2" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.3); /* White background with opacity */
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        width: 90%; /* Responsive width */
+        max-width: 600px; /* Max width */
+    }
+
+    .form-group label {
+        color: var(--orangeSoft); /* Ensure form text is black */
+    }
+    .form-group input, .form-group textarea, select.form-select {
+      background-color: var(--blueDark);
+        color: var(--orangeSoft); /* Ensure form text is black */
+    }
+    .form-group input:focus, textarea:focus, select.form-select:focus {
+      background-color: var(--whiteYellow);
+        color: var(--blueDark); /* Ensure form text is black */
+    }
+</style>
+</head>
+<body>
+  <div class="navbartop blueBackground sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <!-- Navbar toggler aligned to the left on small devices -->
+        <button
+          class="navbar-toggler me-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse blueBackground"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav fontMono fw-bolder mx-auto">
+            <!-- Added mx-auto to center the nav items on larger screens -->
+            <li class="nav-item">
+              <a
+                class="nav-link orangeText me-2"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link orangeText me-2" href="about.html">About</a>
+            </li>
+            <!-- <li class="nav-item dropdown me-2">
+              <a
+                class="nav-link classX orangeText dropdown-toggle me-2"
+                href="projects.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu blueBackground">
+                <li>
+                  <a class="dropdown-item orangeText" href="#"
+                    >Incasso agency</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item orangeText" href="#"
+                    >Hair salon I</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item orangeText" href="#"
+                    >Hair salon II</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item orangeText" href="#"
+                    >Metal recycling</a
+                  >
+                </li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link orangeText me-2" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link orangeText me-2" href="cv.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link orangeText me-2" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
-    
-    <main>
-      <section class="section1">
+      </div>
+    </nav>
+  </div>
 
-      </section>
-      
-      <section class="section2 blueBackground">
-
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-<!-- FOOTER -->
-<div class="container-fluid orangeBackground py-5">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2 border-top container">
-      <div class="col-md-8 d-flex align-items-center justify-content-between">
-          <div class="d-flex align-items-center">
-              <img src="img/favicon/favicon.ico" class="img-fluid" alt="">
-              <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
-          </div>
-          <div>
-              <button type="button" class="btn btnBlue btn-lg px-4 mb-2">Secondary</button>
-              <button type="button" class="btn btnBlue btn-lg px-4">Secondary</button>
+  <main>
+    <div class="cover">
+      <div class="form-container">
+          <h2 class="text-center fontMono whiteText orangeLine mb-5">Contact Me</h2>
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group mb-3">
+                      <label for="name">Name <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" id="name" required />
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="email">Email <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" id="email" required />
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="phone">Phone Number (optional)</label>
+                      <input type="tel" class="form-control" id="phone" />
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="role">Role <span class="text-danger">*</span></label>
+                      <select class="form-select" id="role" required>
+                          <option value="" disabled selected>Select your role</option>
+                          <option value="client">Client</option>
+                          <option value="developer">Developer</option>
+                          <option value="designer">Designer</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group mb-3">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="6"></textarea>
+                  </div>
+              </div>
           </div>
       </div>
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="blueText" href="#"><img src="img/icon/css.png" alt=""></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-      </ul>
+  </div>
+  </main>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center pt-5 pb-5 container">
+    <div class="col-md-8 d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="d-flex align-items-center mb-3 mb-md-0">
+        <img src="img/favicon/favicon.ico" class="img-fluid" alt="" />
+        <span class="mb-3 mb-md-0 blueText fw-bolder ms-2">2024 &copy; J. Van De Weyer</span>
+      </div>
+      <div class="d-flex flex-column flex-md-row">
+        <a type="button" class="btn btnBlue btn-lg px-4 mb-2 mb-md-0 ms-2" href="disclaimer.html">Disclaimer</a>
+        <a type="button" class="btn btnBlue btn-lg px-4 mb-2 mb-md-0 ms-2" href="cv.html">CV</a>
+        <a type="button" class="btn btnBlue btn-lg px-4 ms-2" href="contact.html">Contact</a>
+      </div>
+    </div>
+  
+    <!-- Floating 'top' icon at the intersection -->
+    <a href="#" class="floating-top-icon" title="Back to top..!">
+      <img src="img/icon/top.png" alt="Back to top" />
+    </a>
   </footer>
-</div>
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/navbarDynamic.js"></script>
-    
-  </body>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
