@@ -27,24 +27,77 @@
   </head>
 
   <body>
-    <!-- HEADER -->
-   
-
-   <!-- NAVBAR -->
-
-    <!-- MAIN -->
+    <div class="navbartop blueBackground sticky-top" id="navbar">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <!-- Navbar toggler aligned to the left on small devices -->
+          <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse blueBackground" id="navbarNavDropdown">
+            <ul class="navbar-nav fontMono fw-bolder mx-auto"> <!-- Added mx-auto to center the nav items on larger screens -->
+              <li class="nav-item">
+                <a class="nav-link orangeText me-2" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link orangeText me-2" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown me-2">
+                <a class="nav-link classX orangeText dropdown-toggle me-2" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projects
+                </a>
+                <ul class="dropdown-menu blueBackground">
+                  <li><a class="dropdown-item orangeText" href="#">Incasso agency</a></li>
+                  <li><a class="dropdown-item orangeText" href="#">Hair salon I</a></li>
+                  <li><a class="dropdown-item orangeText" href="#">Hair salon II</a></li>
+                  <li><a class="dropdown-item orangeText" href="#">Metal recycling</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link orangeText me-2" href="cv.html">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link orangeText me-2" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
     <main>
-      <!-- Section 1 -->
-      <section class="section1"></section>
+      <section class="section1">
 
-      <!-- Section 2 -->
-      <section class="section2 blueBackground"></section>
+      </section>
+      
+      <section class="section2 blueBackground">
+
+      </section>
     </main>
 
     <!-- FOOTER -->
-   
-
+<!-- FOOTER -->
+<div class="container-fluid orangeBackground py-5">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2 border-top container">
+      <div class="col-md-8 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+              <img src="img/favicon/favicon.ico" class="img-fluid" alt="">
+              <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+          </div>
+          <div>
+              <button type="button" class="btn btnBlue btn-lg px-4 mb-2">Secondary</button>
+              <button type="button" class="btn btnBlue btn-lg px-4">Secondary</button>
+          </div>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="blueText" href="#"><img src="img/icon/css.png" alt=""></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+  </footer>
+</div>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/navbarDynamic.js"></script>
+    
   </body>
 </html>

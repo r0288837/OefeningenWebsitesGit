@@ -9,7 +9,24 @@
     <link href="css/header.css" rel="stylesheet" />
     <link href="css/sections.css" rel="stylesheet" />
     <title>Portfolio - Home</title>
-    <!-- FONTS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,70 +34,498 @@
       rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- HEADER -->
-    <header class="container-fluid d-flex flex-column justify-content-end p-5">
-      
-  </header>
-<!-- NAVBAR -->
-<div class="navbartop blueBackground">
-  <nav class="navbar navbar-expand-sm sticky-top">
-    <div class="container-fluid">
-      <!-- Navbar toggler aligned to the left on small devices -->
-      <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse blueBackground" id="navbarNavDropdown">
-        <ul class="navbar-nav fontMono fw-bolder mx-auto"> <!-- Added mx-auto to center the nav items on larger screens -->
-          <li class="nav-item">
-            <a class="nav-link orangeText active me-2" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link orangeText me-2" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown me-2">
-            <a class="nav-link classX orangeText dropdown-toggle me-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Projects
-            </a>
-            <ul class="dropdown-menu blueBackground">
-              <li><a class="dropdown-item orangeText" href="#">Incasso agency</a></li>
-              <li><a class="dropdown-item orangeText" href="#">Hair salon I</a></li>
-              <li><a class="dropdown-item orangeText" href="#">Hair salon II</a></li>
-              <li><a class="dropdown-item orangeText" href="#">Metal recycling</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link orangeText me-2" href="#">CV</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link orangeText me-2" href="#">Contact</a>
-          </li>
-        </ul>
+    <header class="py-5 header">
+      <div class="px-4 py-5 text-center">
+        <div class="mt-5">
+          <img
+            class="d-block mx-auto mb-4"
+            src="img/favicon/favicon.ico"
+            alt=""
+            width="111"
+          />
+          <h1 class="display-5 fw-bold text-body-emphasis fontMono orangeText">
+            w e l c o m e
+          </h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 p-3 rounded whiteText">
+              Great! You made it to my portfolio landing page. I'm a Full Stack
+              Web Developer and Graduate Programmer in spe. Feel free to learn
+              more about me, or my projects.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <a
+                type="button"
+                class="btn btnBlue btn-lg px-4"
+                href="projects.html"
+                >Projects</a
+              >
+              <a
+                type="button"
+                class="btn btnOrange btn-lg px-4"
+                href="index.html#about"
+                >About</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
+    </header>
+
+    <div class="navbartop blueBackground sticky-top" id="navbar">
+      <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <!-- Navbar toggler aligned to the left on small devices -->
+          <button
+            class="navbar-toggler me-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse blueBackground"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav fontMono fw-bolder mx-auto">
+              <!-- Added mx-auto to center the nav items on larger screens -->
+              <li class="nav-item">
+                <a
+                  class="nav-link orangeText me-2"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link orangeText me-2" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown me-2">
+                <a
+                  class="nav-link classX orangeText dropdown-toggle me-2"
+                  href="projects.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Projects
+                </a>
+                <ul class="dropdown-menu blueBackground">
+                  <li>
+                    <a class="dropdown-item orangeText" href="#"
+                      >Incasso agency</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item orangeText" href="#"
+                      >Hair salon I</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item orangeText" href="#"
+                      >Hair salon II</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item orangeText" href="#"
+                      >Metal recycling</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link orangeText me-2" href="cv.html">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link orangeText me-2" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-</div>
-    <!-- MAIN -->
+
     <main>
-      <!-- Section 1 -->
-      <section class="section1"></section>
-test
-      <!-- Section 2 -->
-      <section class="section2 blueBackground">test</section>
+      <section class="section1 whiteBackground" id="about">
+        <h2 class="fontMono text-center pt-5 fw-bold blueText orangeLine">
+          About
+        </h2>
+        <div class="container col-xxl-8 px-4 py-5">
+          <div
+            class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5"
+          >
+            <div class="col-10 col-sm-8 col-lg-6 d-flex justify-content-center">
+              <img
+                src="img/ducktree.jpg"
+                class="d-block mx-lg-auto img-fluid rounded-circle"
+                alt="Bootstrap Themes"
+                width="300"
+                height="300"
+                loading="lazy"
+                style="
+                  border: 10px solid var(--darkBlue) !important;
+                  box-shadow: 0px 8px 20px 5px var(--orangeSoft);
+                  shape-outside: circle();
+                  -webkit-shape-outside: circle();
+                  float: left;
+                  margin-right: 20px;
+                "
+              />
+            </div>
+            <div class="col-lg-6">
+              <!-- Flex row for each icon and paragraph -->
+              <div class="d-flex align-items-center mb-3">
+                <div class="me-3">
+                  <img src="img/icon/flag.png" alt="Flag Icon" class="icon" />
+                </div>
+                <div>
+                  <p class="lead mb-0">Hailing from Balen, Antwerp, Belgium</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center mb-3">
+                <div class="me-3">
+                  <img
+                    src="img/icon/school.png"
+                    alt="School Icon"
+                    class="icon"
+                  />
+                </div>
+                <div>
+                  <p class="lead mb-0 fw-bolder fontMono orangeText">
+                    I'm a Junior Full Stack Web Developer & Graduate Programmer
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center mb-3">
+                <div class="me-3">
+                  <img src="img/icon/love.png" alt="Love Icon" class="icon" />
+                </div>
+                <div>
+                  <p class="lead mb-0">
+                    Programming clean and responsive applications or websites is
+                    very satisfactory to me. However, what I find most exciting
+                    is creating appealing, practical, and dynamic user
+                    experiences.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="d-grid gap-2 d-sm-flex justify-content-sm-center mt-5"
+              >
+              <a
+                  type="button"
+                  class="btn btnOrange btn-lg px-4"
+                  href="about.html"
+                  >More</a
+                >
+                <a
+                  type="button"
+                  class="btn btnBlue btn-lg px-4"
+                  href="cv.html"
+                  >CV</a
+                >
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2 blueBackground mb-5 pb-5 pt-5" id="skills">
+        <h2
+          class="fontMono text-center mt-5 pt-5 fw-bold orangeText whiteLine my-5"
+        >
+          Skills
+        </h2>
+        <div class="container mb-5">
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+              <div class="icon-div">
+                <img
+                  src="img/icon/html.png"
+                  alt="html icon"
+                  class="responsive-icon"
+                />
+              </div>
+              <div class="star-rating orangeText fw-bolder" data-delay="0">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <!-- <span class="star">&#9734;</span> -->
+              </div>
+            </div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+              <div class="icon-div">
+                <img
+                  src="img/icon/css.png"
+                  alt="css icon"
+                  class="responsive-icon"
+                />
+              </div>
+              <div class="star-rating orangeText fw-bolder" data-delay="200">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <!-- <span class="star">&#9733;</span> -->
+                <!-- <span class="star">&#9734;</span> -->
+              </div>
+            </div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+              <div class="icon-div">
+                <img
+                  src="img/icon/js.png"
+                  alt="js icon"
+                  class="responsive-icon"
+                />
+              </div>
+              <div class="star-rating orangeText fw-bolder" data-delay="400">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <!-- <span class="star">&#9733;</span> -->
+                <!-- <span class="star">&#9734;</span> -->
+                <!-- <span class="star">&#9734;</span> -->
+              </div>
+            </div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center">
+              <div class="icon-div">
+                <img
+                  src="img/icon/php.png"
+                  alt="php icon"
+                  class="responsive-icon"
+                />
+              </div>
+              <div class="star-rating orangeText fw-bolder" data-delay="600">
+                <span class="star">&#9733;</span>
+                <!-- <span class="star">&#9733;</span> -->
+                <!-- <span class="star">&#9734;</span> -->
+                <!-- <span class="star">&#9734;</span> -->
+                <!-- <span class="star">&#9734;</span> -->
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-grid gap-2  d-none d-md-flex justify-content-sm-center mt-5 pt-5 "
+          >
+            <!-- <button type="button" class="btn btnBlue btn-lg px-4">Primary button</button> -->
+            <a
+              type="button"
+              class="btn btnOrange btn-lg px-4 "
+              href="index.html#projects"
+              >Projects</a
+            >
+            <a type="button" class="btn btnOrange btn-lg px-4" href="cv.html"
+              >CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        id="carouselExampleCaptions"
+        class="carousel slide whiteBackground  d-none d-md-block"
+      >
+        <h2
+          class="fontMono text-center mt-5 pt-5 fw-bold blueText orangeLine my-5"
+        >
+          Projects
+        </h2>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner" id="projects">
+          <div class="carousel-item active">
+            <img
+              src="img/projects/littlebelgium.png"
+              class="d-block w-100"
+              alt="Little Belgium Project"
+            />
+            <a href="#" target="_blank" title="Visit website in new tab..">
+
+            <div class="carousel-caption d-none d-md-block  whiteText">
+              <h5 class="orangeText fontMono">Little Belgium</h5>
+              <p>
+                School group project. Pure HTML & CSS. JS Calculator. 
+              </p>
+            </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/projects/happyhair.png"
+              class="d-block w-100"
+              alt="Happy Hair Project"
+            />
+            <a href="https://www.happyhair.be" target="_blank" title="Visit website in new tab..">
+
+            <div class="carousel-caption d-none d-md-block  whiteTextt">
+              <h5 class="orangeText fontMono">Happy Hair</h5>
+              <p>
+                Internship project. Bootstrap. SEO.              </p>
+            </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/projects/haaranoek.png"
+              class="d-block w-100"
+              alt="Haaranoek Project"
+            />
+            <a href="https://www.haarstudio-anoek.be" target="_blank" title="Visit website in new tab..">
+
+            <div class="carousel-caption d-none d-md-block whiteText">
+              <h5 class="orangeText fontMono">Haaranoek</h5>
+              <p>
+                Internship project. Bootstrap. SEO.
+              </p>
+            </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/projects/dockx.png"
+              class="d-block w-100"
+              alt="Dockx Project"
+            />
+            <a href="https://www.dockxmetaalrecycling.be" target="_blank" title="Visit website in new tab..">
+
+            <div class="carousel-caption d-none d-md-block whiteText">
+              <h5 class="orangeText fontMono">Dockx</h5>
+              <p>
+                Internship project. Bootstrap. SEO. Spent some time going through the custom php build-up. 
+              </p>
+            </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+           
+            <img
+              src="img/projects/onbetaaldefacturen.png"
+              class="d-block w-100"
+              alt="Onbetaaldefacturen Project"
+            />
+         
+          <a href="https://www.onbetaaldefacturen.com" target="_blank" title="Visit website in new tab..">
+            <div class="carousel-caption d-none d-md-block whiteText">
+              <h5 class="orangeText fontMono">Onbetaaldefacturen</h5>
+              <p>
+                
+                Internship project. Bootstrap. SEO. JS Animate.
+              </p>
+            </div>
+          </a>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden=s"true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="my-5 pt-2 pb-5">
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a
+              type="button"
+              class="btn btnBlue btn-lg px-4"
+              href="about.html"
+              >About</a
+            >
+            <a type="button" class="btn btnOrange btn-lg px-4" href="projects.html"
+              >Projects</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-5 container">
+      <div class="col-md-8 d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="d-flex align-items-center mb-3 mb-md-0">
+          <img src="img/favicon/favicon.ico" class="img-fluid" alt="" />
+          <span class="mb-3 mb-md-0 blueText fw-bolder ms-2">2024 &copy; J. Van De Weyer</span>
+        </div>
+        <div class="d-flex flex-column flex-md-row">
+          <a type="button" class="btn btnBlue btn-lg px-4 mb-2 mb-md-0 ms-2" href="disclaimer.html">Disclaimer</a>
+          <a type="button" class="btn btnBlue btn-lg px-4 mb-2 mb-md-0 ms-2" href="cv.html">CV</a>
+          <a type="button" class="btn btnBlue btn-lg px-4 ms-2" href="contact.html">Contact</a>
+        </div>
+      </div>
+    
+      <!-- Floating 'top' icon at the intersection -->
+      <a href="#" class="floating-top-icon" title="Back to top..!">
+        <img src="img/icon/top.png" alt="Back to top" />
+      </a>
+    </footer>
 
     <!-- FOOTER -->
-  
+    <!-- Bootstrap CSS -->
+
+    <!-- Bootstrap JS (with Popper.js) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/navbarDynamic.js"></script>
+    <script src="js/starBar.js"></script>
   </body>
 </html>

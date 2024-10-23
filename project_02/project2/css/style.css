@@ -13,13 +13,16 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: var(--whiteYellow);
+    background-color: var(--orangeSoft);
     font-family: "Public Sans";
   }
-  
+  /* --------------------------------------------------------------- ACTIVE PAGE */
+  /* .nav-link.active {
+    color: var(--whiteYellow); 
+} */
   /* --------------------------------------------------------------- FONTS */
   .fontMono {
-    font-family: "Space Mono";
+    font-family: "Space Mono" !important;
   }
   .fontSerif {
     font-family: "PT Serif";
@@ -33,9 +36,24 @@
     color: var(--orangeSoft) !important;
   }
   .whiteText {
-    color: var(--whiteYellow);
+    color: var(--whiteYellow) !important;
   }
-  
+  /* ------------------------------------------------- LINE COLOURS */
+  .orangeLine {
+    text-decoration: underline;
+    text-decoration-color: var(--orangeSoft); /* Set to your orange color */
+    text-decoration-thickness: 5px; /* Thickness of the underline */
+    text-underline-offset: 15px; /* Offset from the text */
+}
+
+.whiteLine {
+    text-decoration: underline;
+    text-decoration-color: var(--whiteYellow); /* Set to your blue color */
+    text-decoration-thickness: 5px; /* Thickness of the underline */
+    text-underline-offset: 15px; /* Offset from the text */
+}
+
+
   /* ------------------------------------------------- BACKGROUND COLOURS */
   .blueBackground {
     background-color: var(--blueDark);
@@ -44,7 +62,7 @@
     background-color: var(--orangeSoft);
   }
   .whiteBackground {
-    background-color: var(--whiteYellow);
+    background-color: var(--whiteYellow) !important;
   }
 
   /* ------------------------------------------------- BUTTON COLOURS */
@@ -52,7 +70,7 @@
   .btnBlue{
     background-color: var(--blueDark);
     color: var(--orangeSoft);
-    border: 2px solid var(--orangeSoft);
+    border: 4px solid var(--blueDark);
     transition: border-color 1.1s ease;
   }
   .btnBlue:hover{
@@ -64,15 +82,66 @@
   .btnOrange{
     background-color: var(--orangeSoft);
     color: var(--blueDark);
+    border: 4px solid var(--orangeSoft);
+    transition: border-color 1.1s ease;
   }
   .btnOrange:hover{
     background-color: var(--blueDark);
     color: var(--orangeSoft);
+    border-color: var(--orangeSoft);
   }
   .btn {
     font-family: 'Space Mono';
     transition: color 1.1s ease, background-color 1.1s ease; /* Smooth transitions for color and background color */
   }
+
+
+  /* -----------------------------------------------------SPECIAL */
+  /* .icon-div {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px; 
+  } */
+  .icon{
+    filter: brightness(0) saturate(100%) invert(14%) sepia(82%) saturate(2379%) hue-rotate(205deg) brightness(98%) contrast(110%);
+  }
+  
+/* Make the icons responsive */
+.responsive-icon {
+  max-width: 100px; /* Set a max-width for icons */
+  height: auto; /* Ensure the aspect ratio is maintained */
+  margin: auto; /* Center the icon horizontally within its column */
+}
+
+@media (max-width: 576px) { /* Up until small devices (extra small devices) */
+  .responsive-icon {
+      max-width: 80px; /* Smaller icons on small devices */
+  }
+}
+
+.star-rating {
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.star {
+  display: inline-block;
+  opacity: 0; /* Hide stars by default */
+  transform: translateY(10px); /* Move stars slightly down */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Add transition for the stars */
+}
+
+.star-rating.show {
+  opacity: 1; /* Show star rating bar */
+}
+
+.star.show {
+  opacity: 1; /* Show stars */
+  transform: translateY(0); /* Move stars to original position */
+}
+  
   
 
 
