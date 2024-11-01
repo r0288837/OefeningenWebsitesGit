@@ -1,152 +1,85 @@
-.header {
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange items vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-  height: 100vh; /* Set height */
-  min-height: 500px; /* Set a minimum height */
-  background-image: url(/img/landing1.jpeg);
-  background-size: cover; /* Stretch to fill the screen */
-  background-position: center center; /* Center the image */
-  background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-  animation: backgroundSlideshow 56s infinite; 
-}
-.header .lead{
-  background: rgba(8, 27, 83, 0.7);
-}
-@keyframes backgroundSlideshow {
-    0% {
-        background-image: url(/img/office_ai.png);
-    }
-    20% {
-        background-image: url(/img/landing2.jpeg);
-    }
-    40% {
-        background-image: url(/img/office_ai.png);
-    }
-    60% {
-        background-image: url(/img/landing1.jpeg);
-    }
-    80% {
-        background-image: url(/img/office_ai.png);
-    }
-    100% {
-      background-image: url(/img/landing1.jpeg);
-  }
-}
-/* header2 */
-.header2 {
-  height: 90vh;
-  background-image: 
-  /* linear-gradient(to right bottom,  */
-   /* rgba(76, 216, 255, 0.8), */
-   /* rgba(30, 108, 217, 0.8)), */
-   url('/img/zengarden.jpg');
-  background-color: var(--orangeSoft);
-background-size: cover;
-  background-position: top;
-  top: -88px;
-  position: relative;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+.navbartop {
+  height: 11vh; /* Height of the navbar */
+opacity: .9;
 }
 
-.brand-box {
-  position: absolute;
-  top: 40px;
-  left: 40px;
+.navbar {
+  height: 100%; /* No need for specific height, adjust padding instead */
 }
-
-.brand { font-size: 20px; }
-
-.text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-
-  backface-visibility: hidden;
-  margin-bottom: 30px;
-}
-
-.heading-primary-main {
-  display: block;
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-
-.heading-primary-sub {
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 7.4px;
-}
-
-  /* ----------------------------------------------------------------------------- */
-  .navbartop {
-    height: 11vh; /* Height of the navbar */
-    z-index: 1020; /* Ensure navbar stays on top */
-  }
-  
-  .navbar {
-    height: 100%; /* No need for specific height, adjust padding instead */
-  }
 /* Default behavior: Toggler left-aligned, navbar content centered on small devices and above */
 .navbar-nav {
-  text-align: center;
-  width: 100%;
+text-align: center;
+width: 100%;
 }
+
+.navbar .nav-item .img-fluid {
+  height: 24px;
+  width: auto;
+  margin-top: -2px; /* Adjusts image alignment */
+}
+
 .navbartop {
-  transition: top 1.3s; /* Smooth transition for navbar */
+transition: top 1.3s; /* Smooth transition for navbar */
 }
 
 .navbartop.hidden {
-  top: -100px; /* Adjust this value based on your navbar height */
+top: -100px; /* Adjust this value based on your navbar height */
 }
 /* Override the background color of the navbar toggler */
 .navbar-toggler {
-  background-color: var(--orangeSoft); /* Set the background color */
-  border: none; /* Remove the default border */
+background-color: var(--orangeSoft); /* Set the background color */
+border: none; /* Remove the default border */
 }
 
 /* Change the color of the bars inside the hamburger icon */
 .navbar-toggler .navbar-toggler-icon {
-  background-color: var(--darkBlue); /* Set the color of the inner stripes */
+background-color: var(--darkBlue); /* Set the color of the inner stripes */
 }
 
 /* Change the background color when toggler is active (expanded) */
 .navbar-toggler:not(.collapsed) {
-  background-color: var(--whiteYellow); /* Background color when active */
+background-color: var(--whiteYellow); /* Background color when active */
 }
 
 /* Hide the dropdown caret for small devices */
 @media (max-width: 576px) {
-  .navbar-nav .dropdown-toggle::after {
-    display: none; /* Hides the dropdown arrow */
-  }
-  
+.navbar-nav .dropdown-toggle::after {
+  display: none; /* Hides the dropdown arrow */
 }
 
+}
+
+/* Center-align navbar content when collapsed on small screens */
+@media (max-width: 576px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: center; /* Centers all items in collapsed navbar */
+  }
+  
+  /* Ensure the #homeLink takes full width and centers its content */
+  #homeLink {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Optional: Ensure image sizes are consistent for better alignment */
+  .navbar-nav .nav-item .img-fluid {
+    height: 24px;
+    width: auto;
+  }
+}
 
 /* Override for larger screens to center the navbar content */
 @media (min-width: 768px) {
-  .navbar-nav {
-    justify-content: center; /* Centers the nav items */
-  }
+.navbar-nav {
+  justify-content: center; /* Centers the nav items */
+}
 }
 
 /* Keep the toggler aligned to the left on small screens */
 .navbar-toggler {
-  margin-right: auto; /* Aligns the toggler to the left */
+margin-right: auto; /* Aligns the toggler to the left */
 }
 /* VANAF SMALL SCREENS */
 @media (min-width: 576px) {
@@ -156,129 +89,125 @@ background-size: cover;
 
 
 @media (min-width: 768px) {
-  
+
 /* General styles for all nav links */
 a.nav-link {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: inherit; /* Ensures the original color is preserved */
-  transition: color 2s ease; /* Transition for the color */
+position: relative;
+display: inline-block;
+text-decoration: none;
+color: inherit; /* Ensures the original color is preserved */
+transition: color 2s ease; /* Transition for the color */
 }
 
 /* ::after only for nav-links that are not 'Projects' */
-a.nav-link:not(.classX)::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -3px; /* Adjusts the distance of the line from the text */
-  width: 0;
-  height: 2px; /* Thickness of the underline */
-  background-color: var(--whiteYellow); /* Color of the underline */
-  transition: width 1.5s ease;
+a.nav-link:not(#homeLink)::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -3px; /* Adjusts the distance of the line from the text */
+width: 0;
+height: 2px; /* Thickness of the underline */
+background-color: var(--whiteYellow); /* Color of the underline */
+transition: width 1.5s ease;
 }
 
 /* Hover effect for nav links except 'Projects' */
 a.nav-link:hover {
-  color: var(--whiteYellow) !important; /* Change text color on hover */
+color: var(--whiteYellow) !important; /* Change text color on hover */
 }
 
 /* Underline transition for all nav links except 'Projects' */
-a.nav-link:not(.classX):hover::after {
-  width: 100%; /* Expands the underline from 0 to full width */
+a.nav-link:not(#homeLink):hover::after {
+width: 100%; /* Expands the underline from 0 to full width */
+}
+/* Hover effect to enlarge and rotate navbar items */
+.navbar-nav .nav-item .nav-link {
+  transition: transform 1.3s ease, color 1.3s ease; /* Smooth transform and color transition */
 }
 
-
-/* Remove the default underline */
-a.dropdown-item {
-  position: relative;
-  display: inline-block;
-  text-decoration: none; /* Remove default underline */
-  color: inherit;
-  transition: color 2s ease; /* Transition for the text color */
+.navbar-nav .nav-item .nav-link:hover {
+  transform: scale(1.1) rotate(-3deg); /* Slightly enlarge and rotate */
+}
+#homeLink:hover {
+  transform: scale(2.1) rotate(-180deg); /* Slightly enlarge and rotate */
 }
 /* Remove the default underline */
 a.dropdown-item {
-  position: relative;
-  display: inline-block;
-  text-decoration: none; /* Remove default underline */
-  color: inherit;
-  transition: color 2s ease, background-color 2s ease; /* Smooth transitions for color and background */
+position: relative;
+display: inline-block;
+text-decoration: none; /* Remove default underline */
+color: inherit;
+transition: color 2s ease; /* Transition for the text color */
+}
+/* Remove the default underline */
+a.dropdown-item {
+position: relative;
+display: inline-block;
+text-decoration: none; /* Remove default underline */
+color: inherit;
+transition: color 2s ease, background-color 2s ease; /* Smooth transitions for color and background */
 }
 
 /* Create the underline effect using ::after */
 a.dropdown-item::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0; /* Align underline to the bottom */
-  width: 0;
-  height: 2px; /* Thickness of the underline */
-  background-color: var(--whiteYellow); /* Underline color */
-  transition: width 2s ease; /* Transition for the underline */
-  pointer-events: none; /* Prevent ::after from affecting background */
+content: '';
+position: absolute;
+left: 0;
+bottom: 0; /* Align underline to the bottom */
+width: 0;
+height: 2px; /* Thickness of the underline */
+background-color: var(--whiteYellow); /* Underline color */
+transition: width 2s ease; /* Transition for the underline */
+pointer-events: none; /* Prevent ::after from affecting background */
 }
 
 /* Hover effect for dropdown items */
 a.dropdown-item:hover {
-  color: var(--whiteYellow) !important; /* Change text color on hover */
-  background-color: var(--darkBlue) !important; /* Apply background color without affecting the underline */
+color: var(--whiteYellow) !important; /* Change text color on hover */
+background-color: var(--darkBlue) !important; /* Apply background color without affecting the underline */
 }
 
 /* Animate the underline width on hover */
 a.dropdown-item:hover::after {
-  width: 100%; /* Expands underline to full width */
+width: 100%; /* Expands underline to full width */
 }
 
 /* Transition for dropdown-toggle icon (caret) */
 a.dropdown-toggle::after {
-  transition: transform 2s ease; /* Smooth transition for the arrow size over 0.3 seconds */
+transition: transform 2s ease; /* Smooth transition for the arrow size over 0.3 seconds */
 }
 
 /* Enlarge arrow on hover */
 a.dropdown-toggle:hover::after {
-  transform: scale(2.2); /* Adjust the scaling factor as needed */
+transform: scale(2.2); /* Adjust the scaling factor as needed */
 }
 }
 
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1400px) {
+  /* VANAF SMALL SCREENS */
+  @media (min-width: 576px) {
   
-}
-/* Floating 'top' icon styled like the btnBlue */
-.floating-top-icon {
-  position: absolute; /* Position relative to the footer */
-  right: 30px; /* Adjust the right position */
-  top: -0px; /* Adjust this to position the icon above the footer */
-  z-index: 1000;
-  /* color: var(--orangeSoft); */
-  /* background-color: var(--blueDark); */
-  padding: 10px; /* Adjust padding for a better look */
-  border-radius: 50%; /* Circular shape */
-  transition: transform 2s ease, color 2s ease; /* Smooth transition for scale and color effect */
-  filter: brightness(0) saturate(100%) invert(14%) sepia(82%) saturate(2379%) hue-rotate(205deg) brightness(98%) contrast(110%);
+  }
+  
+  
+  
+  @media (min-width: 768px) {
+  }
+  
+  @media (min-width: 992px) {
+  }
+  
+  @media (min-width: 1200px) {
+  }
+  
+  @media (min-width: 1400px) {
+    
+  }
 
+  /* --------------------------------------------------------- */
+  
+#clock {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
 }
-
-.floating-top-icon img {
-  max-width: 40px; /* Default size */
-  height: auto;
-  transition: transform 2s ease; /* Ensure image scales smoothly as well */
-}
-
-/* Hover effect to make the icon 150% of its original size */
-.floating-top-icon:hover {
-  transform: scale(1.5); /* Enlarge to 150% */
-  /* filter: brightness(0) saturate(100%) invert(63%) sepia(55%) saturate(1182%) hue-rotate(1deg) brightness(106%) contrast(103%);  font-weight: bold; Make text bolder on hover */
-}
-footer{
-  position: relative;
-}
-footer {
-  border-top: none !important; /* Remove the border */
-}
+  

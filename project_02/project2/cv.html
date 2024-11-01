@@ -1,101 +1,357 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/header.css" rel="stylesheet" />
-    <link href="css/sections.css" rel="stylesheet" />
-    <title>Portfolio - Home</title>
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="author"
+      content="Joeri Van De Weyer"
+    />
+    <title>Home | Wired by Weyer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <style></style>
   </head>
-
   <body>
-
-    <header class="py-5">
-      <div class="px-4 py-5 text-center">
-        <div class="mt-5">
-        <img class="d-block mx-auto mb-4" src="img/Favicon/favicon.ico" alt="" width="111">
-        <h1 class="display-5 fw-bold text-body-emphasis">Welcome to my portfolio!</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4 text-white">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btnBlue btn-lg px-4 gap-3">Primary button</button>
-            <button type="button" class="btn btnOrange btn-lg px-4">Secondary</button>
-          </div>
-        </div>
-      </div>
-      </div>
-    </header> 
-
-    <div class="navbartop blueBackground sticky-top" id="navbar">
+    <div class="navbartop blueBackground sticky-top z-indexZ" id="navbar">
       <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
           <!-- Navbar toggler aligned to the left on small devices -->
-          <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler me-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse blueBackground" id="navbarNavDropdown">
-            <ul class="navbar-nav fontMono fw-bolder mx-auto"> <!-- Added mx-auto to center the nav items on larger screens -->
-              <li class="nav-item">
-                <a class="nav-link orangeText me-2" aria-current="page" href="index.html">Home</a>
+          <div
+            class="collapse navbar-collapse blueBackground"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav fontMono fw-bolder mx-auto">
+              <!-- Added mx-auto to center the nav items on larger screens -->
+              <li class="nav-item d-flex align-items-center text-center">
+                <a
+                  id="homeLink"
+                  class="nav-link orangeText me-2 d-flex align-items-center"
+                  aria-current="page"
+                  href="index.html"
+                >
+                  <img
+                    src="img/favicon/favicon.ico"
+                    alt=""
+                    class="img-fluid"
+                    style="height: 24px; width: auto"
+                  />
+                </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link orangeText me-2" href="about.html">About</a>
               </li>
-              <li class="nav-item dropdown me-2">
-                <a class="nav-link classX orangeText dropdown-toggle me-2" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Projects
-                </a>
-                <ul class="dropdown-menu blueBackground">
-                  <li><a class="dropdown-item orangeText" href="#">Incasso agency</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Hair salon I</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Hair salon II</a></li>
-                  <li><a class="dropdown-item orangeText" href="#">Metal recycling</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link orangeText me-2" href="projects.html"
+                  >Projects</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link orangeText me-2" href="cv.html">CV</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link orangeText me-2" href="contact.html">Contact</a>
+                <a class="nav-link orangeText me-2" href="contact.html"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    
+   
+
     <main>
-      <section class="section1">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+            <div class="container pt-5">
+                <div class="row featurette">
+                  <div class="col-md-7 text-center">
+                    <!-- <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2> -->
+                    <p class="lead">Als ervaren telecom verkoper en horecamedewerker ben ik een enthousiaste en gemotiveerde teamspeler met een praktische instelling en een goed gevoel voor humor. Mijn collega's kennen mij als een behulpzame, flexibele en leergierige medewerker, die voldoening haalt uit commercieel en klantgericht handelen.
 
-      </section>
+                    </p>
+                    <p class="lead">Rijp voor andere en betere opportuniteiten, heb ik recent de beslissing genomen om alsnog via studies een meer uitdagende en interessante levensweg in te slaan, meer bepaald de ontwikkeling van websites en applicaties. De wereld gekend te hebben voor de globale internetcultuur brengt een appreciatie met zich mee voor de manier waarop de huidige technologie en ontwikkeling mensen persoonlijk en zakelijk, zoals nooit eerder, met elkaar verbindt.
+
+          
+                    </p>
+                  </div>
+                  <div class="col-md-5 text-center">
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+                     <img src="img/ducktree.jpg" class="img-fluid rounded-4" alt="" style="max-height: 70%;">
+                  </div>
+                </div>
+                <p class="lead">Daarin houd ik zelf van aantrekkelijk ontworpen, gebruiksvriendelijke applicaties en websites, en deze zelf kunnen ontwerpen en ontwikkelen was de motivatie om de recente full stack development-cursus aan te vangen. Niet enkel vond ik het front-end ontwerpen en coderen van websites en apps enorm leuk, maar ook effectief programmeren was iets waar ik met plezier uren kon in researchen. Daaropvolgend ben ik daarom ook een graduaat programmeren gaan volgen.
+
+                </p>
+              </div>
+       
+        </div>
       
-      <section class="section2 blueBackground">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            
+            <!-- <div  style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
+             <div class="skillbars">
+                <div
+            class="whiteBackground me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden"
+          >
+            <div class="row mt-5 pt-2">
+              <div class="col d-flex flex-column">
+                <img
+                  src="img/icon/html.png"
+                  alt="html icon"
+                  class="icon responsive-icon"
+                />
+                <div class="star-rating fw-bolder mb-5" data-delay="0">
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star blueText">&#9733;</span>
+                </div>
+              </div>
+              <div class="col d-flex flex-column">
+                <img
+                  src="img/icon/css.png"
+                  alt="css icon"
+                  class="icon responsive-icon"
+                />
+                <div class="star-rating fw-bolder mb-5" data-delay="0">
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star blueText">&#9733;</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex flex-column">
+                <img
+                  src="img/icon/php.png"
+                  alt="php icon"
+                  class="icon responsive-icon"
+                />
+                <div class="star-rating blueText fw-bolder mb-5" data-delay="0">
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star blueText">&#9733;</span>
+                  <span class="star blueText">&#9733;</span>
+                  <span class="star blueText">&#9733;</span>
+                </div>
+              </div>
+              <div class="col d-flex flex-column">
+                <img
+                  src="img/icon/js.png"
+                  alt="js icon"
+                  class="icon responsive-icon"
+                />
+                <div class="star-rating blueText fw-bolder mb-5" data-delay="0">
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star orangeText">&#9733;</span>
+                  <span class="star blueText">&#9733;</span>
+                  <span class="star blueText">&#9733;</span>
+                </div>
+              </div>
+            </div>
+             </div>
+          </div>
+          </div>
+          <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="orangeText whiteLine">Studies</h2>
 
-      </section>
-    </main>
+              <table class="cv">
+                <tr >
+                <th  rowspan="2">2024-2026</th>
+                <td>Graduaat Programmeren</td>
+              </tr>
+              <tr>
+                
+                <td class="lastmargin">Thomas More Hogeschool, Geel</td>
+              </tr>
+              <tr>
+                <th rowspan="2">2021-2022</th>
+                <td class="tablemargin">Full Stack Web Development</td>
+              </tr>
+              <tr>
+                
+                <td>CVO De Verdieping, Zolder</td>
+              </tr>
+              <tr>
+                <th rowspan="2">2009</th>
+                <td>Secundair onderwijs 3e graad, TSO (Handel)</td>
+              </tr>
+              <tr>
+                
+                <td>Sint-Jan Berchmanscollege, Mol</td>
+              </tr>
+               </table>
+               <h2 class="orangeText whiteLine">Ervaring</h2>
+               <table class="cv">
+                <tr>
+                <th rowspan="2">2022</th>
+                <td>Stage SEO & Front End Developer</td>
+              </tr>
+              <tr>
+                
+                <td>Inspira nv, Arendonk</td>
+              </tr>
+              <tr>
+                <th rowspan="2">2022-2024</th>
+                <td>Winkelbediende/ avondverantwoordelijke</td>
+              </tr>
+              <tr>
+                
+                <td>Carrefour Express, Mol</td>
+              </tr>
+              <tr>
+                <th rowspan="2">2020-2021</th>
+                <td>Verkoper Telecom</td>
+              </tr>
+              <tr>
+                
+                <td>Orange Shop, Mol</td>
+              </tr>
+              <tr>
+                <th rowspan="2">2019-2020</th>
+                <td>Verkoper/toonbankverantwoordelijke beenhouwerij</td>
+              </tr>
+              <tr>
+                
+                <td>Delhaize, Mol</td>
+              </tr>
+              <tr>
+                <th rowspan="2">2012-2018</th>
+                <td>Kelner/zaalverantwoordelijke</td>
+              </tr>
+              <tr>
+                
+                <td>Hotel-Taverne Lommel Broek, Lommel</td>
+              </tr>
+               </table>
+              <!-- <h2 class="display-5">Another headline</h2> -->
+              <!-- <p class="lead">And an even wittier subheading.</p> -->
+            </div>
+            <div class="cvtabellist"></div>
+            <!-- <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
+          </div>
+          
+        </div>
+      
+        
+        <section class="whiteBackground pt-5">
+            <div class="container pt-5">
+                  <div class="row featurette">
+                    <div class="col-md-7 text-center">
+                      <!-- <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2> -->
+                      <p class="lead">IT, and technology in general, has always interested me, however my first true concrete experience was just a few years ago, when I applied for a 1 year course of Full Stack Development. Finishing this succesfully, and having really enjoyed it, I decided to commit fully and acquire a Graduate in Programming as well.</p>
+                      <p class="lead">Programming clean and responsive applications or websites is very satisfactory to me. However, what I find most exciting is creating appealing, practical and dynamic user experiences. I love how IT evolved to be a industry in which interaction and teamwork make the dream work.
+            
+                      </p>
+                    </div>
+                    <div class="col-md-5 text-center">
+                      <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+                       <img src="img/ducktree.jpg" class="img-fluid rounded-4" alt="" style="max-height: 80%;">
+                    </div>
+                  </div>
+                </div>
+              </section>
+               <!-- Banner section -->
+   <div class="banner blueBackground">
+    <div class="container py-5 text-center">
+      <h2 class="fontMono orangeText text-center pt-5">Get in touch!</h2>
+      <a class="btn btn-lg btnOrange my-5 shake pulse"
+      href="contact.html">Contact</a>
+    </div>
+  </div>
+      </main>
+    <footer class="orangeBackground py-5">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm">
+            <img
+              src="img/icon/copy.png"
+              alt=""
+              class="icon responsive-icon"
+            /><span class="fontMono fw-bold blueText fs-4 ms-2"
+              >J. VD Weyer</span
+            >
+          </div>
+          <div class="col-sm">
+            <a class="btn btn-lg btnBlue me-2 mt-2"
+            href="disclaimer.html">Disclaimer</a>
+          </div>
+          <div class="col-sm textWhite">
+            <div id="clock" class="fontMono fs-6 whiteText"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-    <!-- FOOTER -->
-
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/navbarDynamic.js"></script>
-    
+    <!-- <script src="js/starBar.js"></script> -->
+    <script src="js/clock.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
